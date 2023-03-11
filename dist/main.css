@@ -594,6 +594,10 @@ video {
   margin-right: 15rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .box-content {
   box-sizing: content-box;
 }
@@ -652,6 +656,14 @@ video {
 
 .basis-3\/5 {
   flex-basis: 60%;
+}
+
+.basis-1\/4 {
+  flex-basis: 25%;
+}
+
+.basis-2\/4 {
+  flex-basis: 50%;
 }
 
 .-translate-y-1\/2 {
@@ -719,6 +731,10 @@ video {
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-20 {
+  gap: 5rem;
 }
 
 .overflow-y-auto {
@@ -873,6 +889,21 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -911,6 +942,10 @@ video {
 
 .pt-0 {
   padding-top: 0px;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
 }
 
 .text-center {
