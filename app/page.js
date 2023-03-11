@@ -250,20 +250,86 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="h-screen">
+            <div className="h-screen w-full flex flex-col items-center">
               <h1 className="text-5xl font-bold text-center p-10">ROADMAP</h1>
-              <div className="container-none flex flex-col items-center">
-                <div className="container-none flex flex-row items-center gap-10 bg-red-100">
-                  <div className="basis-2/5 h-60 border-r-2 border-green-500"></div>
-                  <div>
-                    <div className="basis 2/5 h-60 p-5 bg-orange-300 rounded-lg">
-                      <h1>Phase 1</h1>
-                      <p>Lorem ipsum dolor sit amet</p>
-                      <p>Lorem ipsum dolor sit amet</p>
-                      <p>Lorem ipsum dolor sit amet</p>
-                      <p>Lorem ipsum dolor sit amet</p>
-                    </div>
+              <div className="container-none flex flex-col h-full w-full items-center p-5 pt-0">
+                <div className="container-none h-35 w-full flex flex-row items-center gap-10 mr-60">
+                  <div className="basis-2/5 h-full p-5 border-r-4 border-green-500 border-dashed">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
                   </div>
+                  <div className="basis 2/5 h-30 p-5 bg-orange-300 rounded-lg">
+                    <h1>Phase 1</h1>
+                    <p className="text-sm">
+                      Lorem ipsum dolor sit amet consectetur adipisci elit.
+                    </p>
+                    <p className="text-sm">
+                      Lorem ipsum dolor sit amet consectetur adipisci elit.
+                    </p>
+                    <p className="text-sm">
+                      Lorem ipsum dolor sit amet consectetur adipisci elit.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="container-none h-35 w-full flex flex-row items-center gap-10 mt-2 ml-60">
+                  <div className="basis 2/5 h-30 p-5 bg-orange-300 rounded-lg">
+                    <h1>Phase 2</h1>
+                    <p className="text-sm">
+                      Lorem ipsum dolor sit amet consectetur adipisci elit.
+                    </p>
+                    <p className="text-sm">
+                      Lorem ipsum dolor sit amet consectetur adipisci elit.
+                    </p>
+                    <p className="text-sm">
+                      Lorem ipsum dolor sit amet consectetur adipisci elit.
+                    </p>
+                  </div>
+                  <div className="basis-2/5 h-full p-5 border-l-4 border-green-500 border-dashed">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                  </div>
+                </div>
+
+                <div className="container-none h-35 w-full flex flex-row items-center mt-2 mr-60 gap-10">
+                  <div className="basis-2/5 h-full p-5 border-r-4 border-yellow-500 border-dashed">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                  </div>
+                  <div className="basis 2/5 h-30 p-5 bg-orange-300 rounded-lg">
+                    <h1>Phase 3</h1>
+                    <p className="text-sm">
+                      Lorem ipsum dolor sit amet consectetur adipisci elit.
+                    </p>
+                    <p className="text-sm">
+                      Lorem ipsum dolor sit amet consectetur adipisci elit.
+                    </p>
+                    <p className="text-sm">
+                      Lorem ipsum dolor sit amet consectetur adipisci elit.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="container-none h-35 w-full flex flex-row items-center gap-10 mt-2 ml-60">
+                  <div className="basis 2/5 h-30 p-5 bg-orange-300 rounded-lg">
+                    <h1>Phase 4</h1>
+                    <p className="text-sm">
+                      Lorem ipsum dolor sit amet consectetur adipisci elit.
+                    </p>
+                    <p className="text-sm">
+                      Lorem ipsum dolor sit amet consectetur adipisci elit.
+                    </p>
+                    <p className="text-sm">
+                      Lorem ipsum dolor sit amet consectetur adipisci elit.
+                    </p>
+                  </div>
+                  <div className="basis-2/5 h-full p-5 border-l-4 border-yellow-500 border-dashed"></div>
                 </div>
                 <div></div>
                 <div></div>

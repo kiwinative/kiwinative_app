@@ -1,3 +1,9 @@
 export default function Footer() {
-  return <h1></h1>;
+  return (
+    <div>
+      <div>
+        <div></div>
+      </div>
+    </div>
+  );
 }
