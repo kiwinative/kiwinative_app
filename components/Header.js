@@ -4,7 +4,7 @@ import logo from "../public/kiwi-logo.png";
 
 export default function Header() {
   return (
-    <div className="relative container-none mx-0 mt-0 p-0">
+    <nav className="h-auto w-full top-0 fixed z-20 bg-white">
       <div className="flex items-center justify-between pl-10 py-2 pr-12">
         <div className="flex items-center justify-start p-2">
           <div>
@@ -15,11 +15,11 @@ export default function Header() {
           </div>
         </div>
         <div>
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+          <button className="hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full bg-[#6c8726]">
             Connect Wallet
           </button>
         </div>
       </div>
-    </div>
+    </nav>
   );
 }

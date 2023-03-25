@@ -17,10 +17,10 @@
     "typescript": "4.9.5"
   },
   "dependencies": {
+    "@heroicons/react": "^2.0.16",
     "chart.js": "^4.2.1",
-    "next": "^13.2.3",
+    "next": "^13.2.4",
     "react-chartjs-2": "^5.2.0",
-    "react-icons": "^4.7.1",
-    "recharts": "^2.4.3"
+    "react-icons": "^4.8.0"
   }
 }

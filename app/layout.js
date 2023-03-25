@@ -7,10 +7,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Header />
+        {/* <div className="absolute">
+          <Header />
+        </div> */}
         {children}
+        <Footer />
       </body>
-      <Footer />
     </html>
   );
 }

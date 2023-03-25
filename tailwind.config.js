@@ -19,10 +19,12 @@ module.exports = {
     },
     extend: {
       colors: {
-        lightIndigo: "#0c0422",
-        darkIndigo: "#090311",
-        veryDarkIndigo: "#060211",
+        lightIndigo: "#140E3A",
+        darkIndigo: "#050023",
+        lightGreen: "#6C8726",
+        darkGreen: "rgba(108, 135, 38, 0.41)",
         white: "#ffffff",
+        lightWhite: "rgba(255,255,255, 0.18)",
         snowWhite: "#fcfcfc",
         darkWhite: "#fffafa",
         veryDarkWhite: "f5f5f5",

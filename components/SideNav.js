@@ -7,7 +7,7 @@ import "../dist/main.css";
 
 const SideNav = () => {
   return (
-    <div className="container-none absolute flex flex-col mx-0 justify-center items-center gap-10  h-full max-h-screen overflow-y-auto flex-grow ">
+    <div className="fixed flex flex-col mt-4 mx-0 justify-center items-center gap-10 flex-grow">
       <Link href=".">Home</Link>
       <Link href="./airdrop/">Airdrop</Link>
       <Link href="./sports/">Sports</Link>

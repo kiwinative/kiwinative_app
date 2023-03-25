@@ -18,9 +18,9 @@ const Carousel = () => {
   let slideInterval;
 
   useEffect(() => {
-    imageRef.current.addEventListener("animationend", removeAnimation);
-    imageRef.current.addEventListener("mouseenter", stopSlide);
-    imageRef.current.addEventListener("mouseleave", startSlide);
+    // imageRef.current.addEventListener("animationend", removeAnimation);
+    // imageRef.current.addEventListener("mouseenter", stopSlide);
+    // imageRef.current.addEventListener("mouseleave", startSlide);
     // startSlide();
 
     return () => {
@@ -28,11 +28,11 @@ const Carousel = () => {
     };
   }, []);
 
-  const startSlide = () => {
-    slideInterval = setInterval(() => {
-      handleOnNextClick();
-    }, 5000);
-  };
+  // const startSlide = () => {
+  //   slideInterval = setInterval(() => {
+  //     handleOnNextClick();
+  //   }, 5000);
+  // };
 
   const stopSlide = () => {
     clearInterval(slideInterval);
