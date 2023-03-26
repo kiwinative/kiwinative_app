@@ -58,7 +58,7 @@ const Carousel = () => {
   return (
     <div ref={imageRef}>
       <div className="aspect-auto h-auto w-[80vw] bg-black">
-        <img src={sliderImages[index]} className="h-[80vh] w-[80vw]"></img>
+        <img src={sliderImages[index]} className="h-[90vh] w-[80vw]"></img>
         {/* <Image src={sliderImages[index]} alt="" height="500" width="1200" /> */}
       </div>
 

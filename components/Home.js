@@ -13,44 +13,48 @@ import {
 import { SiStackbit } from "react-icons/si";
 import Image from "next/image";
 import logo from "../public/logo.svg";
+import { styles } from "@/styles";
 
 import Carousel from "./Carousel";
 const Home = () => {
   return (
     <div className="h-auto w-[80vw] object-fill select-none relatives mt-[50px] bg-darkIndigo bg-black">
-      <Carousel />
-
-      <div className="basis-10/12 bg-green-100 box-content">
+      <div className="basis-10/12 bg-darkIndigo box-content">
         <div>
           <Carousel />
-          <div className="pb-10">
-            <h1 className="text-3xl font-bold text-center p-10">
-              Supported Exchanges to buy Kiwi
-            </h1>
+
+          <div className="pb-10 bg-lightIndigo">
+            <h1 className={styles.headerText}>Supported Exchanges</h1>
             <div>
               <div className="container-none flex flex-row gap-10 justify-evenly">
                 <div className="flex flex-row items-center">
-                  <FaToriiGate size={40} />
-                  <p className="text-center pl-5 text-lg font-bold align-middle">
+                  <FaToriiGate size={40} className="text-red-500" />
+                  <p className="text-center pl-5 text-lg font-bold align-middle text-darkWhite">
                     Gate.io
                   </p>
                 </div>
                 <div className="flex flex-row items-center">
-                  <BsBank2 size={40} />
-                  <p className="text-center pl-5 text-lg font-bold align-middle">
+                  <BsBank2 size={40} className="text-white" />
+                  <p className="text-center pl-5 text-lg font-bold align-middle text-darkWhite">
                     LBANK
                   </p>
                 </div>
                 <div className="flex flex-row items-center">
-                  <SiStackbit size={40} />
-                  <p className="text-center pl-5 text-lg font-bold align-middle">
+                  <SiStackbit size={40} className="text-orange-400" />
+                  <p className="text-center pl-5 text-lg font-bold align-middle text-darkWhite">
                     HOTBIT
                   </p>
                 </div>
                 <div className="flex flex-row items-center">
-                  <FaRandom size={40} />
-                  <p className="text-center pl-5 text-lg font-bold align-middle">
+                  <FaRandom size={40} className="text-white" />
+                  <p className="text-center pl-5 text-lg font-bold align-middle text-darkWhite">
                     WXYZ
+                  </p>
+                </div>
+                <div className="flex flex-row items-center">
+                  <FaRandom size={40} className="text-rose-500" />
+                  <p className="text-center pl-5 text-lg font-bold align-middle text-darkWhite">
+                    ABC
                   </p>
                 </div>
               </div>
