@@ -24,9 +24,11 @@ const Home = () => {
           <Carousel />
 
           <div className="pb-10 bg-lightIndigo">
-            <h1 className={styles.headerText}>Supported Exchanges</h1>
+            <h1 className={`${styles.headerText} mt-5 pt-5`}>
+              Supported Exchanges
+            </h1>
             <div>
-              <div className="container-none flex flex-row gap-10 justify-evenly">
+              <div className="container-none flex flex-row gap-10 justify-evenly pt-3">
                 <div className="flex flex-row items-center">
                   <FaToriiGate size={40} className="text-red-500" />
                   <p className="text-center pl-5 text-lg font-bold align-middle text-darkWhite">
@@ -62,29 +64,30 @@ const Home = () => {
           </div>
 
           <div className="h-screen">
-            <h1 className="text-5xl font-bold text-center p-10">
-              About Kiwinative
+            <h1 className={`${styles.subHeaderText}`}>
+              What to know about Kiwinative
             </h1>
+            <h1 className={styles.headerText}>About Kiwinative</h1>
             <div className="container-none flex flex-row items-center p-20">
               <div className="basis-1/2">
                 <Image src={logo} alt="" height={400} width={400} />
               </div>
 
               <div className="basis-1/2 flex flex-col px-15">
-                <p>
+                <p className="text-darkWhite">
                   Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
                   eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut
                   enim ad minim veniam, quis nostrum exercitationem ullam
                   corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
                   consequatur.{" "}
                 </p>
-                <p className="pt-8">
+                <p className="pt-8 text-white">
                   Quis aute iure reprehenderit in voluptate velit esse cillum
                   dolore eu fugiat nulla pariatur. Excepteur sint obcaecat
                   cupiditat non proident, sunt in culpa qui officia deserunt
                   mollit anim id est laborum.{" "}
                 </p>
-                <p className="pt-8">
+                <p className="pt-8 text-white">
                   Quis aute iure reprehenderit in voluptate velit esse cillum
                   dolore eu fugiat nulla pariatur. Excepteur sint obcaecat
                   cupiditat non proident, sunt in culpa qui officia deserunt
@@ -95,41 +98,40 @@ const Home = () => {
           </div>
 
           <div className="h-screen container-none flex flex-col justify-center items-center p-20">
-            <h1 className="text-5xl font-bold text-center p-10 pt-15">
-              Why Kiwinative?
-            </h1>
+            <h1 className={styles.subHeaderText}>Objectives of the Project</h1>
+            <h1 className={styles.headerText}>Why Kiwinative?</h1>
             <div className="container-none flex flex-row flex-wrap items-center">
               <div className="basis-1/2 flex flex-row p-10 items-center">
-                <BsLightningFill size={65} />
-                <p className="pl-8">
+                <BsLightningFill size={65} className="text-orange-400" />
+                <p className="pl-8 text-white">
                   Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
                   eiusmod tempor incidunt ut labore et dolore magna aliqua
                 </p>
               </div>
               <div className="basis-1/2 flex flex-row p-10">
-                <BsFillPeopleFill size={65} />
-                <p className="pl-8">
+                <BsFillPeopleFill size={65} className="text-white" />
+                <p className="pl-8 text-white">
                   Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
                   eiusmod tempor incidunt ut labore et dolore magna aliqua
                 </p>
               </div>
               <div className="basis-1/2 flex flex-row p-10">
-                <BsFillShieldSlashFill size={65} />
-                <p className="pl-8">
+                <BsFillShieldSlashFill size={65} className="text-green-500" />
+                <p className="pl-8 text-white">
                   Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
                   eiusmod tempor incidunt ut labore et dolore magna aliqua
                 </p>
               </div>
               <div className="basis-1/2 flex flex-row p-10">
-                <FaCoins size={65} />
-                <p className="pl-8">
+                <FaCoins size={65} className="text-[#ffd700]" />
+                <p className="pl-8 text-white">
                   Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
                   eiusmod tempor incidunt ut labore et dolore magna aliqua
                 </p>
               </div>
               <div className="basis-1/2 flex flex-row p-10">
-                <BsCurrencyExchange size={65} />
-                <p className="pl-8">
+                <BsCurrencyExchange size={65} className="text-[#ffd700]" />
+                <p className="pl-8 text-white">
                   Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
                   eiusmod tempor incidunt ut labore et dolore magna aliqua
                 </p>
@@ -138,62 +140,77 @@ const Home = () => {
           </div>
 
           <div className="h-screen container-none flex flex-col justify-center items-center p-20">
-            <h1 className="text-5xl font-bold text-center p-10 pt-15">
-              Ecosytem
+            <h1 className={styles.subHeaderText}>
+              Real-world uses of Kiwinative
             </h1>
+            <h1 className={styles.headerText}>Ecosytem</h1>
             <div className="container-none flex flex-row flex-wrap items-center">
-              <div className="basis-2/5 p-4 m-10 bg-orange-300 rounded-lg">
+              <div className="basis-2/5 p-4 m-10 bg-lightIndigo rounded-lg">
                 <div className="container-none flex flex-row items-center">
                   <div className="basis-2/5">
-                    <h1 className="text-2xl font-bold text-center">01.</h1>
-                    <h1 className="text-2xl font-bold text-center">AIRDROP</h1>
+                    <h1 className="text-2xl font-bold text-center text-darkWhite">
+                      01.
+                    </h1>
+                    <h1 className="text-2xl font-bold text-center text-darkWhite">
+                      AIRDROP
+                    </h1>
                   </div>
-                  <div className="basis-3/5 border-l-2 border-gray-700 p-3">
-                    <p className="text-center">
+                  <div className="basis-3/5 border-l-2 border-lightGreen p-3">
+                    <p className="text-center text-darkWhite">
                       Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
                       eiusmod tempor incidunt ut labore et dolore magna aliqua.
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="basis-2/5 p-4 m-10 bg-orange-300 rounded-lg">
+              <div className="basis-2/5 p-4 m-10 bg-lightIndigo rounded-lg">
                 <div className="container-none flex flex-row items-center">
                   <div className="basis-2/5">
-                    <h1 className="text-2xl font-bold text-center">02.</h1>
-                    <h1 className="text-2xl font-bold text-center">SPORTS</h1>
+                    <h1 className="text-2xl font-bold text-center text-darkWhite">
+                      02.
+                    </h1>
+                    <h1 className="text-2xl font-bold text-center text-darkWhite">
+                      SPORTS
+                    </h1>
                   </div>
-                  <div className="basis-3/5 border-l-2 border-gray-700 p-3">
-                    <p className="text-center">
+                  <div className="basis-3/5 border-l-2 border-lightGreen p-3">
+                    <p className="text-center text-white">
                       Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
                       eiusmod tempor incidunt ut labore et dolore magna aliqua.
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="basis-2/5 p-4 m-10 bg-orange-300 rounded-lg">
+              <div className="basis-2/5 p-4 m-10 bg-lightIndigo rounded-lg">
                 <div className="container-none flex flex-row items-center">
                   <div className="basis-2/5">
-                    <h1 className="text-2xl font-bold text-center">03.</h1>
-                    <h1 className="text-2xl font-bold text-center">CASINO</h1>
+                    <h1 className="text-2xl font-bold text-center text-darkWhite">
+                      03.
+                    </h1>
+                    <h1 className="text-2xl font-bold text-center text-darkWhite">
+                      CASINO
+                    </h1>
                   </div>
-                  <div className="basis-3/5 border-l-2 border-gray-700 p-3">
-                    <p className="text-center">
+                  <div className="basis-3/5 border-l-2 border-lightGreen p-3">
+                    <p className="text-center text-darkWhite">
                       Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
                       eiusmod tempor incidunt ut labore et dolore magna aliqua.
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="basis-2/5 p-4 m-10 bg-orange-300 rounded-lg">
+              <div className="basis-2/5 p-4 m-10 bg-lightIndigo rounded-lg">
                 <div className="container-none flex flex-row items-center">
                   <div className="basis-2/5">
-                    <h1 className="text-2xl font-bold text-center">04.</h1>
-                    <h1 className="text-2xl font-bold text-center">
+                    <h1 className="text-2xl font-bold text-center text-darkWhite">
+                      04.
+                    </h1>
+                    <h1 className="text-2xl font-bold text-center text-darkWhite">
                       MARKETPLACE
                     </h1>
                   </div>
-                  <div className="basis-3/5 border-l-2 border-gray-700 p-3">
-                    <p className="text-center">
+                  <div className="basis-3/5 border-l-2 border-lightGreen p-2">
+                    <p className="text-center text-darkWhite">
                       Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
                       eiusmod tempor incidunt ut labore et dolore magna aliqua.
                     </p>
