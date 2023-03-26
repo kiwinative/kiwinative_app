@@ -36,7 +36,7 @@ const Home = () => {
                   </p>
                 </div>
                 <div className="flex flex-row items-center">
-                  <BsBank2 size={40} className="text-white" />
+                  <BsBank2 size={40} className="text-[#ffd700]" />
                   <p className="text-center pl-5 text-lg font-bold align-middle text-darkWhite">
                     LBANK
                   </p>
@@ -48,7 +48,7 @@ const Home = () => {
                   </p>
                 </div>
                 <div className="flex flex-row items-center">
-                  <FaRandom size={40} className="text-white" />
+                  <FaRandom size={40} className="text-red-400" />
                   <p className="text-center pl-5 text-lg font-bold align-middle text-darkWhite">
                     WXYZ
                   </p>
@@ -109,7 +109,7 @@ const Home = () => {
                 </p>
               </div>
               <div className="basis-1/2 flex flex-row p-10">
-                <BsFillPeopleFill size={65} className="text-white" />
+                <BsFillPeopleFill size={65} className="text-green-500" />
                 <p className="pl-8 text-white">
                   Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
                   eiusmod tempor incidunt ut labore et dolore magna aliqua
@@ -220,31 +220,40 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="h-auto flex flex-col">
-            <h1 className="text-5xl font-bold text-center p-10 pt-15">
-              TOKENOMICS
+          <div className="h-screen flex flex-col">
+            <h1 className={styles.subHeaderText}>
+              How much Kiwinative has been minted
             </h1>
-            <div className="container-none flex flex-row items-center justify-evenly">
+            <h1 className={styles.headerText}>TOKENOMICS</h1>
+            <div className="container-none flex flex-row items-center justify-evenly mt-8">
               <div className="flex flex-col items-center">
-                <BsStack size={65} />
-                <h1 className="text-2xl pt-2 font-bold text-center">
+                <BsStack size={65} className="text-[#ffd700]" />
+                <h1 className="text-2xl pt-2 font-bold text-center text-darkWhite">
                   LOREM-20
                 </h1>
-                <h1 className="text-2xl text-center">Lorem Token</h1>
+                <h1 className="text-xl text-center text-darkWhite">
+                  Lorem Token
+                </h1>
               </div>
               <div className="flex flex-col items-center">
-                <BsCoin size={65} />
-                <h1 className="text-2xl pt-2 font-bold text-center">
+                <BsCoin size={65} className="text-[#ffd700]" />
+                <h1 className="text-2xl pt-2 font-bold text-center text-darkWhite">
                   $KIWINATIVE
                 </h1>
-                <h1 className="text-2xl text-center">Utility Token</h1>
+                <h1 className="text-xl text-center text-darkWhite">
+                  Utility Token
+                </h1>
               </div>
               <div className="flex flex-col items-center">
-                <h1 className="text-6xl font-bold text-center">20B</h1>
-                <h1 className="text-2xl pt-2 font-bold text-center">
+                <h1 className="text-7xl font-bold text-center text-green-500">
+                  20B
+                </h1>
+                <h1 className="text-2xl pt-2 font-bold text-center text-darkWhite">
                   20 BILLION
                 </h1>
-                <h1 className="text-2xl text-center">Total Supply</h1>
+                <h1 className="text-xl text-center text-darkWhite">
+                  Total Supply
+                </h1>
               </div>
             </div>
             {/* <div className="h-screen container-none flex flex-row gap-5 items-center">
@@ -254,8 +263,9 @@ const Home = () => {
           </div>
 
           <div className="h-screen w-full flex flex-col items-center">
-            <h1 className="text-5xl font-bold text-center p-10">ROADMAP</h1>
-            <div className="container-none flex flex-col h-full w-full items-center p-5 pt-0">
+            <h1 className={styles.subHeaderText}>Our journey so far</h1>
+            <h1 className={styles.headerText}>ROADMAP</h1>
+            <div className="container-none flex flex-col h-full w-full items-center p-5 mt-8">
               <div className="container-none h-35 w-full flex flex-row items-center gap-10 mr-60">
                 <div className="basis-2/5 h-full p-5 border-r-4 border-green-500 border-dashed"></div>
                 <div className="basis 2/5 h-30 p-5 bg-orange-300 rounded-lg">

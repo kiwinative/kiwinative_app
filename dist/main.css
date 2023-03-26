@@ -594,36 +594,12 @@ video {
   margin-top: 50px;
 }
 
-.ml-4 {
-  margin-left: 1rem;
-}
-
-.ml-8 {
-  margin-left: 2rem;
-}
-
-.ml-10 {
-  margin-left: 2.5rem;
+.mt-\[60px\] {
+  margin-top: 60px;
 }
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
-.mt-\[30px\] {
-  margin-top: 30px;
-}
-
-.mt-\[40px\] {
-  margin-top: 40px;
-}
-
-.mt-\[60px\] {
-  margin-top: 60px;
 }
 
 .box-content {
@@ -654,8 +630,8 @@ video {
   height: 200vh;
 }
 
-.h-\[80vh\] {
-  height: 80vh;
+.h-\[90vh\] {
+  height: 90vh;
 }
 
 .h-auto {
@@ -668,10 +644,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[90vh\] {
-  height: 90vh;
 }
 
 .w-20 {
@@ -692,10 +664,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[18vw\] {
-  width: 18vw;
 }
 
 .flex-1 {
@@ -898,14 +866,14 @@ video {
   border-color: rgb(34 197 94 / var(--tw-border-opacity));
 }
 
-.border-yellow-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(234 179 8 / var(--tw-border-opacity));
-}
-
 .border-lightGreen {
   --tw-border-opacity: 1;
   border-color: rgb(108 135 38 / var(--tw-border-opacity));
+}
+
+.border-yellow-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(234 179 8 / var(--tw-border-opacity));
 }
 
 .bg-black {
@@ -1069,6 +1037,14 @@ video {
   padding-top: 0.5rem;
 }
 
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
 .pt-6 {
   padding-top: 1.5rem;
 }
@@ -1077,28 +1053,8 @@ video {
   padding-top: 2rem;
 }
 
-.pt-10 {
-  padding-top: 2.5rem;
-}
-
-.pt-5 {
-  padding-top: 1.25rem;
-}
-
-.pt-3 {
-  padding-top: 0.75rem;
-}
-
-.pl-\[20px\] {
-  padding-left: 20px;
-}
-
 .text-center {
   text-align: center;
-}
-
-.text-start {
-  text-align: start;
 }
 
 .align-middle {
@@ -1129,6 +1085,14 @@ video {
   font-size: 18px;
 }
 
+.text-\[22px\] {
+  font-size: 22px;
+}
+
+.text-\[30px\] {
+  font-size: 30px;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1149,20 +1113,18 @@ video {
   line-height: 1rem;
 }
 
-.text-\[20px\] {
-  font-size: 20px;
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
-.text-\[40px\] {
-  font-size: 40px;
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
 }
 
-.text-\[30px\] {
-  font-size: 30px;
-}
-
-.text-\[22px\] {
-  font-size: 22px;
+.font-black {
+  font-weight: 900;
 }
 
 .font-bold {
@@ -1181,10 +1143,6 @@ video {
   font-weight: 600;
 }
 
-.font-black {
-  font-weight: 900;
-}
-
 .uppercase {
   text-transform: uppercase;
 }
@@ -1195,6 +1153,11 @@ video {
 
 .tracking-wider {
   letter-spacing: 0.05em;
+}
+
+.text-\[\#ffd700\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 215 0 / var(--tw-text-opacity));
 }
 
 .text-darkIndigo {
@@ -1212,14 +1175,9 @@ video {
   color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
-.text-white {
+.text-green-500 {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-rose-500 {
-  --tw-text-opacity: 1;
-  color: rgb(244 63 94 / var(--tw-text-opacity));
+  color: rgb(34 197 94 / var(--tw-text-opacity));
 }
 
 .text-orange-400 {
@@ -1232,14 +1190,19 @@ video {
   color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
-.text-green-500 {
+.text-rose-500 {
   --tw-text-opacity: 1;
-  color: rgb(34 197 94 / var(--tw-text-opacity));
+  color: rgb(244 63 94 / var(--tw-text-opacity));
 }
 
-.text-\[\#ffd700\] {
+.text-white {
   --tw-text-opacity: 1;
-  color: rgb(255 215 0 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-red-400 {
+  --tw-text-opacity: 1;
+  color: rgb(248 113 113 / var(--tw-text-opacity));
 }
 
 .transition {
@@ -1398,41 +1361,17 @@ video {
 }
 
 @media (min-width: 480px) {
-  .sm\:text-\[60px\] {
-    font-size: 60px;
-  }
-
-  .sm\:text-\[50px\] {
-    font-size: 50px;
+  .sm\:text-\[14px\] {
+    font-size: 14px;
   }
 
   .sm\:text-\[35px\] {
     font-size: 35px;
   }
-
-  .sm\:text-\[18px\] {
-    font-size: 18px;
-  }
-
-  .sm\:text-\[14px\] {
-    font-size: 14px;
-  }
 }
 
 @media (min-width: 976px) {
-  .lg\:text-\[80px\] {
-    font-size: 80px;
-  }
-
-  .lg\:text-\[70px\] {
-    font-size: 70px;
-  }
-
   .lg\:text-\[50px\] {
     font-size: 50px;
-  }
-
-  .lg\:leading-\[98px\] {
-    line-height: 98px;
   }
 }
