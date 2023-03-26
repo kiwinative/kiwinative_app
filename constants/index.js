@@ -37,10 +37,10 @@ export const Menus = [
       { title: "submenu 3" },
     ],
   },
-  { title: "Token", icon: <MdToken />, spacing: true },
+  { title: "Token", icon: <MdToken /> },
 ];
 
-export const SubMenus = [
+export const InfoMenus = [
   {
     title: "Information",
     submenu: true,
