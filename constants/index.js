@@ -2,8 +2,7 @@ import React from "react";
 import { BsCashCoin, BsCheckCircle } from "react-icons/bs";
 import { AiOutlineHome } from "react-icons/ai";
 import { TbAirBalloon } from "react-icons/tb";
-import check from "../public/check.png";
-import alarm from "../public/alarm.png";
+
 import {
   MdSportsVolleyball,
   MdOutlineCasino,
@@ -73,12 +72,11 @@ export const roadmaps = [
   {
     title: "Phase 1.",
     objective: "Research, Ideation & Design ",
-    icon: { check },
+    icon: <BsCheckCircle color="#39ff14" />,
     iconBg: "#383E56",
     date: "Sept 2022 - Dec 2022",
     points: [
       "Lorem ipsum dolor sit amet consectetur adipisci elit..",
-      "Lorem ipsum dolor sit amet consectetur adipisci elit.",
       "Lorem ipsum dolor sit amet consectetur adipisci elit.",
       "Lorem ipsum dolor sit amet consectetur adipisci elit.",
     ],
@@ -86,7 +84,7 @@ export const roadmaps = [
   {
     title: "Phase 2.",
     objective: "Prototyping",
-    icon: { check },
+    icon: <BsCheckCircle color="#39ff14" className="text-bold" />,
     iconBg: "#E6DEDD",
     date: "Jan 2023 - March 2023",
     points: [
@@ -98,7 +96,7 @@ export const roadmaps = [
   {
     title: "Phase 3.",
     objective: "Website & MVP Launch",
-    icon: { alarm },
+    icon: <MdPendingActions color="orange" />,
     iconBg: "#383E56",
     date: "April 2023",
     points: [
@@ -109,7 +107,7 @@ export const roadmaps = [
   {
     title: "Phase 4.",
     objective: "Ecosystem Pilot Tests",
-    icon: { alarm },
+    icon: <MdPendingActions color="orange" />,
     iconBg: "#E6DEDD",
     date: "May 2023 - August 2023",
     points: [
@@ -121,8 +119,8 @@ export const roadmaps = [
   {
     title: "Phase 5.",
     objective: "Final Release",
-    icon: { alarm },
-    iconBg: "#E6DEDD",
+    icon: <MdPendingActions color="orange" />,
+    iconBg: "#383E56",
     date: "September 2023",
     points: [
       "Lorem ipsum dolor sit amet consectetur adipisci elit..",

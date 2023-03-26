@@ -15,20 +15,13 @@ const RoadmapCard = ({ roadmap }) => {
       contentStyle={{
         background: "#140E3A",
         color: "#fffafa",
-        // width: "500px",
+        borderRadius: 15,
+        borderBottomColor: "#6C8726",
       }}
-      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+      contentArrowStyle={{ borderRight: "7px solid #6C8726" }}
       date={roadmap.date}
       iconStyle={{ background: roadmap.iconBg }}
-      icon={
-        <div className="flex justify-center items-center w-full h-full">
-          <img
-            src={roadmap.icon}
-            alt={roadmap.objective}
-            className="w-[60%] h-[60%] object-contain"
-          />
-        </div>
-      }
+      icon={roadmap.icon}
     >
       <div>
         <h3 className="text-white text-[24px] font-bold">{roadmap.title}</h3>
