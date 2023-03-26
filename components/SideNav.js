@@ -24,7 +24,7 @@ const SideNav = () => {
   return (
     <div>
       <div
-        className={`fixed h-screen bg-lightIndigo p-5 mt-[50px] pt-8 overflow-y-scroll ${
+        className={`fixed h-screen bg-lightIndigo p-5 mt-[50px] pt-8 pb-[100px] overflow-y-scroll scrollbar scrollbar-thumb-rose-500 scrollbar-track-slate-700 ${
           open ? "w-72" : "w-20"
         } duration-300`}
       >

@@ -8,25 +8,25 @@
     width: 0.5rem;
   }
   .scrollbar::-webkit-scrollbar-thumb {
-    background: #140e3a;
+    background: #6c8726;
     border-radius: 1rem;
   }
   .scrollbar::-webkit-scrollbar-thumb:active {
-    background-color: #050023;
+    background-color: #6c8726;
   }
   .scrollbar::-webkit-scrollbar-thumb:hover {
-    background: #050023;
+    background: #6c8726;
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
   }
 
   /* Scroll track styles (Background) */
   .scrollbar::-webkit-scrollbar-track {
-    background: #050023;
+    background: #140e3a;
     border-radius: 4px;
   }
   .scrollbar::-webkit-scrollbar-track:hover,
   .scrollbar::-webkit-scrollbar-track:active {
-    background: #050023;
+    background: #140e3a;
   }
 }
 
