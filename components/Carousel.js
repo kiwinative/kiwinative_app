@@ -21,7 +21,7 @@ const Carousel = () => {
     imageRef.current.addEventListener("animationend", removeAnimation);
     imageRef.current.addEventListener("mouseenter", stopSlide);
     imageRef.current.addEventListener("mouseleave", startSlide);
-    startSlide();
+    // startSlide();
 
     return () => {
       stopSlide();
@@ -57,7 +57,7 @@ const Carousel = () => {
   };
   return (
     <div ref={imageRef}>
-      <div className="aspect-auto h-auto w-[80vw] transition-transform ease-in duration-500">
+      <div className="aspect-auto h-auto w-[80vw] bg-black">
         <img src={sliderImages[index]} className="h-[80vh] w-[80vw]"></img>
         {/* <Image src={sliderImages[index]} alt="" height="500" width="1200" /> */}
       </div>

@@ -32,6 +32,7 @@ export default function Home() {
             <SideNav />
           </aside>
         </div>
+
         <div className="basis-10/12 bg-green-100 box-content">
           <div>
             <Carousel />

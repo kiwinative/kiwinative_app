@@ -12,7 +12,7 @@ const HomePage = () => {
         <div className="w-[20vw]">
           <SideNav />
         </div>
-        <div className="w-[80vw]">
+        <div className="w-[80vw] bg-darkIndigo">
           <Home />
         </div>
       </div>

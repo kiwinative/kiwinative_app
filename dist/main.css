@@ -658,6 +658,10 @@ video {
   width: 100%;
 }
 
+.w-\[18vw\] {
+  width: 18vw;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -1132,26 +1136,12 @@ video {
   transition-duration: 150ms;
 }
 
-.transition-transform {
-  transition-property: transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .duration-200 {
   transition-duration: 200ms;
 }
 
 .duration-300 {
   transition-duration: 300ms;
-}
-
-.duration-500 {
-  transition-duration: 500ms;
-}
-
-.ease-in {
-  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 .scrollbar {
@@ -1248,7 +1238,7 @@ video {
 
 .fade-animation img {
   /* animation: fadeAnimation 0.5s ease-out; */
-  animation: fadeAnimation 0.5s ease-in;
+  animation: fadeAnimation 0.5s ease-out;
 }
 
 @keyframes fadeAnimation {

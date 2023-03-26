@@ -32,7 +32,7 @@
 
 .fade-animation img {
   /* animation: fadeAnimation 0.5s ease-out; */
-  animation: fadeAnimation 0.5s ease-in;
+  animation: fadeAnimation 0.5s ease-out;
 }
 
 @keyframes fadeAnimation {
