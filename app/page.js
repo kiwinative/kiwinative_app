@@ -8,9 +8,13 @@ const HomePage = () => {
   return (
     <>
       <Header />
-      <div className="flex">
-        <SideNav />
-        <Home />
+      <div className="flex flex-row">
+        <div className="w-[20vw]">
+          <SideNav />
+        </div>
+        <div className="w-[80vw]">
+          <Home />
+        </div>
       </div>
     </>
   );

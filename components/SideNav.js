@@ -33,9 +33,9 @@ const SideNav = () => {
             <>
               <li
                 key={index}
-                className={`text-gray-300 text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-lightGreen hover:text-white rounded-md ${
+                className={`text-gray-300 text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-lightGreen hover:text-white active:bg-lightGreen active:text-white rounded-md ${
                   menu.spacing ? "mt-9" : "mt-2"
-                } mt-2"`}
+                }`}
               >
                 <span className="text-2xl block float-left">
                   {menu.icon ? menu.icon : <AiOutlineHome />}

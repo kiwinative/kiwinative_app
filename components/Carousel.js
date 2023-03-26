@@ -1,4 +1,3 @@
-"use client";
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
@@ -14,25 +13,26 @@ const slideLength = sliderImages.length;
 
 const Carousel = () => {
   const [index, setIndex] = useState(0);
+  const [curr, setCurr] = useState(0);
   const imageRef = useRef();
   let slideInterval;
 
   useEffect(() => {
-    // imageRef.current.addEventListener("animationend", removeAnimation);
-    // imageRef.current.addEventListener("mouseenter", stopSlide);
-    // imageRef.current.addEventListener("mouseleave", startSlide);
-    // startSlide();
+    imageRef.current.addEventListener("animationend", removeAnimation);
+    imageRef.current.addEventListener("mouseenter", stopSlide);
+    imageRef.current.addEventListener("mouseleave", startSlide);
+    startSlide();
 
     return () => {
       stopSlide();
     };
   }, []);
 
-  // const startSlide = () => {
-  //   slideInterval = setInterval(() => {
-  //     handleOnNextClick();
-  //   }, 5000);
-  // };
+  const startSlide = () => {
+    slideInterval = setInterval(() => {
+      handleOnNextClick();
+    }, 5000);
+  };
 
   const stopSlide = () => {
     clearInterval(slideInterval);
@@ -56,12 +56,13 @@ const Carousel = () => {
     imageRef.current.classList.add("fade-animation");
   };
   return (
-    <div ref={imageRef} className="w-full select-none relative">
-      <div className="aspect-w-15 aspect-h-7 h-4/5">
-        <Image src={sliderImages[index]} alt="" fill />
+    <div ref={imageRef}>
+      <div className="aspect-auto h-auto w-[80vw] transition-transform ease-in duration-500">
+        <img src={sliderImages[index]} className="h-[80vh] w-[80vw]"></img>
+        {/* <Image src={sliderImages[index]} alt="" height="500" width="1200" /> */}
       </div>
 
-      <div className="absolute w-full top-1/2 transform -translate-y-1/2  px-3 flex justify-between items-center">
+      <div className="absolute w-[80vw] top-1/2 transform -translate-y-1/2  px-3 flex justify-between items-center">
         <button
           className="bg-black text-white p-1 rounded-full bg-opacity-50 cursor-pointer hover:bg-opacity-100 transition "
           onClick={handleOnPrevClick}

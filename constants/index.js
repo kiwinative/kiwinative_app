@@ -5,7 +5,7 @@ import { TbAirBalloon } from "react-icons/tb";
 import { MdSportsVolleyball, MdOutlineCasino, MdToken } from "react-icons/md";
 
 export const Menus = [
-  { title: "Home", icon: <AiOutlineHome /> },
+  { title: "Home", icon: <AiOutlineHome />, active: true },
   { title: "Airdrop", icon: <TbAirBalloon /> },
   {
     title: "Sports",
