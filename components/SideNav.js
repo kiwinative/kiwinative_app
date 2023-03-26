@@ -24,7 +24,7 @@ const SideNav = () => {
   return (
     <div>
       <div
-        className={`relative h-screen bg-lightIndigo p-5 pt-8 overflow-y-scroll ${
+        className={`fixed h-screen bg-lightIndigo p-5 mt-[50px] pt-8 overflow-y-scroll ${
           open ? "w-72" : "w-20"
         } duration-300`}
       >
@@ -123,7 +123,7 @@ const SideNav = () => {
             <p className="text-xs text-darkWhite py-2">
               0x72920394...Bdfj34802
             </p>
-            <MdContentCopy className="text-base text-white" />
+            <MdContentCopy className="text-base text-white hover:bg-lightWhite" />
           </div>
 
           <button className="text-sm text-base bg-darkGreen hover:bg-lightGreen text-white py-1 px-4 mt-2 mb-4 rounded-full items-center">

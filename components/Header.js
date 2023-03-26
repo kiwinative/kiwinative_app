@@ -1,21 +1,25 @@
 import React from "react";
 import Image from "next/image";
-import logo from "../public/kiwi-logo.png";
+import logo from "../public/logo.svg";
+import { BsWallet2 } from "react-icons/bs";
 
 export default function Header() {
   return (
-    <nav className="h-auto w-full top-0 fixed z-20 bg-white">
+    <nav className="h-auto w-full top-0 fixed z-20 bg-darkIndigo">
       <div className="flex items-center justify-between pl-10 py-2 pr-12">
         <div className="flex items-center justify-start p-2">
           <div>
-            <Image alt="logo" src={logo} width={80} height={80} />
+            <Image alt="logo" src={logo} width={55} height={55} />
           </div>
           <div>
-            <h3 className="pt-6 font-bold text-red-600">KIWI</h3>
+            <h3 className="text-[18px] tracking-[1px] pt-6 font-extrabold text-darkWhite">
+              Kiwinative
+            </h3>
           </div>
         </div>
         <div>
-          <button className="hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full bg-[#6c8726]">
+          <button className="inline-flex gap-x-4 items-center text-white font-bold py-2 px-4 rounded-full bg-lightGreen hover:bg-darkGreen">
+            <BsWallet2 />
             Connect Wallet
           </button>
         </div>

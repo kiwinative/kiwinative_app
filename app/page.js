@@ -2,13 +2,17 @@
 import React from "react";
 import SideNav from "@/components/SideNav";
 import Home from "@/components/Home";
+import Header from "@/components/Header";
 
 const HomePage = () => {
   return (
-    <div className="flex">
-      <SideNav />
-      <Home />
-    </div>
+    <>
+      <Header />
+      <div className="flex">
+        <SideNav />
+        <Home />
+      </div>
+    </>
   );
 };
 export default HomePage;
