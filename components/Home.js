@@ -14,6 +14,7 @@ import { SiStackbit } from "react-icons/si";
 import Image from "next/image";
 import logo from "../public/logo.svg";
 import { styles } from "@/styles";
+import Roadmap from "./Roadmap";
 
 import Carousel from "./Carousel";
 const Home = () => {
@@ -262,78 +263,7 @@ const Home = () => {
               </div> */}
           </div>
 
-          <div className="h-screen w-full flex flex-col items-center">
-            <h1 className={styles.subHeaderText}>Our journey so far</h1>
-            <h1 className={styles.headerText}>ROADMAP</h1>
-            <div className="container-none flex flex-col h-full w-full items-center p-5 mt-8">
-              <div className="container-none h-35 w-full flex flex-row items-center gap-10 mr-60">
-                <div className="basis-2/5 h-full p-5 border-r-4 border-green-500 border-dashed"></div>
-                <div className="basis 2/5 h-30 p-5 bg-orange-300 rounded-lg">
-                  <h1>Phase 1</h1>
-                  <p className="text-sm">
-                    Lorem ipsum dolor sit amet consectetur adipisci elit.
-                  </p>
-                  <p className="text-sm">
-                    Lorem ipsum dolor sit amet consectetur adipisci elit.
-                  </p>
-                  <p className="text-sm">
-                    Lorem ipsum dolor sit amet consectetur adipisci elit.
-                  </p>
-                </div>
-              </div>
-
-              <div className="container-none h-35 w-full flex flex-row items-center gap-10 mt-3 ml-60">
-                <div className="basis 2/5 h-30 p-5 bg-orange-300 rounded-lg">
-                  <h1>Phase 2</h1>
-                  <p className="text-sm">
-                    Lorem ipsum dolor sit amet consectetur adipisci elit.
-                  </p>
-                  <p className="text-sm">
-                    Lorem ipsum dolor sit amet consectetur adipisci elit.
-                  </p>
-                  <p className="text-sm">
-                    Lorem ipsum dolor sit amet consectetur adipisci elit.
-                  </p>
-                </div>
-                <div className="basis-2/5 h-full p-5 border-l-4 border-green-500 border-dashed"></div>
-              </div>
-
-              <div className="container-none h-35 w-full flex flex-row items-center mt-3 mr-60 gap-10">
-                <div className="basis-2/5 h-full p-5 border-r-4 border-yellow-500 border-dashed"></div>
-                <div className="basis 2/5 h-30 p-5 bg-orange-300 rounded-lg">
-                  <h1>Phase 3</h1>
-                  <p className="text-sm">
-                    Lorem ipsum dolor sit amet consectetur adipisci elit.
-                  </p>
-                  <p className="text-sm">
-                    Lorem ipsum dolor sit amet consectetur adipisci elit.
-                  </p>
-                  <p className="text-sm">
-                    Lorem ipsum dolor sit amet consectetur adipisci elit.
-                  </p>
-                </div>
-              </div>
-
-              <div className="container-none h-35 w-full flex flex-row items-center gap-10 mt-3 ml-60">
-                <div className="basis 2/5 h-30 p-5 bg-orange-300 rounded-lg">
-                  <h1>Phase 4</h1>
-                  <p className="text-sm">
-                    Lorem ipsum dolor sit amet consectetur adipisci elit.
-                  </p>
-                  <p className="text-sm">
-                    Lorem ipsum dolor sit amet consectetur adipisci elit.
-                  </p>
-                  <p className="text-sm">
-                    Lorem ipsum dolor sit amet consectetur adipisci elit.
-                  </p>
-                </div>
-                <div className="basis-2/5 h-full p-5 border-l-4 border-yellow-500 border-dashed"></div>
-              </div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-          </div>
+          <Roadmap />
         </div>
       </div>
     </div>
