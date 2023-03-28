@@ -15,11 +15,12 @@ import Image from "next/image";
 import logo from "../public/logo.svg";
 import { styles } from "@/styles";
 import Roadmap from "./Roadmap";
+import Footer from "./Footer";
 
 import Carousel from "./Carousel";
 const Home = () => {
   return (
-    <div className="h-auto w-[80vw] object-fill select-none relatives mt-[50px] bg-darkIndigo bg-black">
+    <div className="h-auto w-[80vw] object-fill select-none relatives mt-[50px] bg-darkIndigo bg-black overflow-x-none">
       <div className="basis-10/12 bg-darkIndigo box-content">
         <div>
           <Carousel />
@@ -264,6 +265,7 @@ const Home = () => {
           </div>
 
           <Roadmap />
+          <Footer />
         </div>
       </div>
     </div>
