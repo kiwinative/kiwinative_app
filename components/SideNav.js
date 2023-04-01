@@ -12,16 +12,19 @@ import { FaDiscord } from "react-icons/fa";
 import { MdContentCopy, MdOutlineLightMode } from "react-icons/md";
 import { Menus, InfoMenus } from "@/constants";
 import Link from "next/link";
-import { MenuContext, MenuProvider } from "./Contexts";
-
-// import { HomeIcon } from '@heroicons/react/24/solid'
+import { useGlobalContext } from "@/app/Context/store";
 
 const SideNav = (props) => {
-  const [open, setOpen] = useState(true);
-  const [submenuOpen, setSubmenuOpen] = useState(false);
-  const [infosubmenuOpen, setInfosubmenuOpen] = useState(false);
-
-  const { state, dispatch } = useContext(MenuContext);
+  const {
+    open,
+    setOpen,
+    submenuOpen,
+    setSubmenuOpen,
+    infosubmenuOpen,
+    setInfosubmenuOpen,
+    linksubmenuOpen,
+    setLinksubmenuOpen,
+  } = useGlobalContext();
 
   return (
     <div>
@@ -49,28 +52,7 @@ const SideNav = (props) => {
                 >
                   {menu.title}
                 </span>
-                {menu.submenu && open && (
-                  <BsChevronDown
-                    className={`${submenuOpen && "rotate-180"}`}
-                    onClick={() => {
-                      setSubmenuOpen(!submenuOpen);
-                    }}
-                  />
-                )}
               </li>
-
-              {menu.submenu && submenuOpen && open && (
-                <ul>
-                  {menu.submenuItems.map((submenuItem, index) => (
-                    <li
-                      key={index}
-                      className="text-gray-300 text-sm flex items-center gap-x-5 gap-y-0 cursor-pointer p-2 px-5 hover:bg-lightGreen hover:text-white rounded-md"
-                    >
-                      {submenuItem.title}
-                    </li>
-                  ))}
-                </ul>
-              )}
             </>
           ))}
         </ul>
@@ -86,16 +68,17 @@ const SideNav = (props) => {
               <>
                 <li
                   key={index}
-                  className={`text-gray-300 text-sm flex items-center gap-x-1 cursor-pointer rounded-md mt-2`}
+                  className={`text-gray-300 text-sm flex items-center gap-x-1 cursor-pointer p-2 hover:bg-lightGreen hover:text-white active:bg-lightGreen active:text-white rounded-md`}
                 >
                   <span
-                    className={`text-base text-sm font-small flex-1 duration-200 ${
+                    className={`text-sm font-small flex-1 duration-200 ${
                       !open && "hidden"
                     }`}
                   >
                     {menu.title}
                   </span>
-                  {menu.submenu && open && (
+                  <span className="block"></span>
+                  {index == 0 && open && (
                     <BsChevronDown
                       className={`${infosubmenuOpen && "rotate-180"}`}
                       onClick={() => {
@@ -103,14 +86,35 @@ const SideNav = (props) => {
                       }}
                     />
                   )}
+                  {index == 1 && open && (
+                    <BsChevronDown
+                      className={`${linksubmenuOpen && "rotate-180"}`}
+                      onClick={() => {
+                        setLinksubmenuOpen(!linksubmenuOpen);
+                      }}
+                    />
+                  )}
                 </li>
 
-                {menu.submenu && infosubmenuOpen && open && (
+                {index == 0 && infosubmenuOpen && open && (
                   <ul>
                     {menu.submenuItems.map((submenuItem, index) => (
                       <li
                         key={index}
-                        className="text-gray-300 text-sm flex items-center cursor-pointer p-1 px-3 rounded-md"
+                        className="text-gray-300 text-sm flex items-center cursor-pointer p-1 pl-2 hover:bg-lightGreen hover:text-white active:bg-lightGreen active:text-white rounded-md"
+                      >
+                        {submenuItem.title}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+
+                {index == 1 && linksubmenuOpen && open && (
+                  <ul>
+                    {menu.submenuItems.map((submenuItem, index) => (
+                      <li
+                        key={index}
+                        className="text-gray-300 text-sm flex items-center cursor-pointer p-1 pl-2 hover:bg-lightGreen hover:text-white active:bg-lightGreen active:text-white rounded-md"
                       >
                         {submenuItem.title}
                       </li>
@@ -128,7 +132,7 @@ const SideNav = (props) => {
             <MdContentCopy className="text-base text-white hover:bg-lightWhite" />
           </div>
 
-          <button className="text-sm text-base bg-darkGreen hover:bg-lightGreen text-white py-1 px-4 mt-2 mb-4 rounded-full items-center">
+          <button className="text-sm bg-darkGreen hover:bg-lightGreen text-white py-1 px-4 mt-2 mb-4 rounded-full items-center">
             <MdOutlineLightMode className="inline text-center mb-1" /> &nbsp;
             Light Mode
           </button>
@@ -151,6 +155,7 @@ const SideNav = (props) => {
             }`}
             onClick={() => {
               setOpen(!open);
+              // dispatch({ type: "TOGGLE_MENU" });
             }}
           />
         </div>

@@ -49,6 +49,7 @@ export const Menus = [
 export const InfoMenus = [
   {
     title: "Information",
+    id: 1,
     submenu: true,
     submenuItems: [
       { title: "submenu 1" },
@@ -59,6 +60,7 @@ export const InfoMenus = [
 
   {
     title: "Links",
+    id: 2,
     submenu: true,
     submenuItems: [
       { title: "submenu 1" },

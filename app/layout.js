@@ -2,6 +2,7 @@
 import "../dist/main.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { GlobalContextProvider } from "./Context/store";
 
 export default function RootLayout({ children }) {
   return (
@@ -10,7 +11,7 @@ export default function RootLayout({ children }) {
         {/* <div className="absolute">
           <Header />
         </div> */}
-        {children}
+        <GlobalContextProvider>{children}</GlobalContextProvider>
         {/* <Footer /> */}
       </body>
     </html>
