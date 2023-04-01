@@ -31,14 +31,14 @@ export default function Footer() {
             suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
           </h1>
         </div>
-        <div className="inline-flex gap-x-5 items-center py-3 text-center ml-[30vw]">
-          <BsTwitter className="text-white" />
-          <TbBrandTelegram className="text-white" />
-          <TbBrandReddit className="text-white" />
-          <BsDiscord className="text-white" />
+        <div className="inline-flex gap-x-7 items-center py-3 text-center ml-[30vw]">
+          <BsTwitter className="text-white" size={120} />
+          <TbBrandTelegram className="text-white text-[70px]" />
+          <TbBrandReddit className="text-white text-[70px]" />
+          <BsDiscord className="text-white text-[70px]" />
         </div>
         <div>
-          <p className="text-darkWhite text-center py-2 ">
+          <p className="text-darkWhite text-center pt-4">
             Copyright &#169;2023. All rights reserved by Kiwinative.
           </p>
         </div>

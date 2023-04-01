@@ -3,19 +3,22 @@ import React from "react";
 import SideNav from "@/components/SideNav";
 import Home from "@/components/Home";
 import Header from "@/components/Header";
+import { MenuProvider } from "@/components/Contexts";
 
 const HomePage = () => {
   return (
     <>
-      <Header />
-      <div className="flex flex-row">
-        <div className="w-[20vw]">
-          <SideNav />
+      <MenuProvider>
+        <Header />
+        <div className="flex flex-row">
+          <div className="w-[20vw]">
+            <SideNav />
+          </div>
+          <div className="w-[80vw] bg-darkIndigo">
+            <Home />
+          </div>
         </div>
-        <div className="w-[80vw] bg-darkIndigo">
-          <Home />
-        </div>
-      </div>
+      </MenuProvider>
     </>
   );
 };

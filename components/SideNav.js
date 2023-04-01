@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import {
   BsChevronDown,
   BsChevronDoubleLeft,
@@ -12,14 +12,16 @@ import { FaDiscord } from "react-icons/fa";
 import { MdContentCopy, MdOutlineLightMode } from "react-icons/md";
 import { Menus, InfoMenus } from "@/constants";
 import Link from "next/link";
+import { MenuContext, MenuProvider } from "./Contexts";
 
 // import { HomeIcon } from '@heroicons/react/24/solid'
 
-const SideNav = () => {
+const SideNav = (props) => {
   const [open, setOpen] = useState(true);
   const [submenuOpen, setSubmenuOpen] = useState(false);
   const [infosubmenuOpen, setInfosubmenuOpen] = useState(false);
-  const [submenuClose, setSubmenuClose] = useState(false);
+
+  const { state, dispatch } = useContext(MenuContext);
 
   return (
     <div>
