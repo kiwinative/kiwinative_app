@@ -16,6 +16,7 @@ export const GlobalContextProvider = ({ children }) => {
   const [submenuOpen, setSubmenuOpen] = useState(false);
   const [infosubmenuOpen, setInfosubmenuOpen] = useState(false);
   const [linksubmenuOpen, setLinksubmenuOpen] = useState(false);
+  const [pageWidth, setPageWidth] = useState("80vw");
   return (
     <GlobalContext.Provider
       value={{
@@ -27,6 +28,8 @@ export const GlobalContextProvider = ({ children }) => {
         setInfosubmenuOpen,
         linksubmenuOpen,
         setLinksubmenuOpen,
+        pageWidth,
+        setPageWidth,
       }}
     >
       {children}

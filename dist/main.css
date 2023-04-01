@@ -687,6 +687,10 @@ video {
   width: 100%;
 }
 
+.w-\[5vw\] {
+  width: 5vw;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }

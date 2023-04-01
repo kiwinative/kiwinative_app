@@ -24,13 +24,17 @@ const SideNav = (props) => {
     setInfosubmenuOpen,
     linksubmenuOpen,
     setLinksubmenuOpen,
+    pageWidth,
+    setPageWidth,
   } = useGlobalContext();
 
   return (
     <div>
       <div
         className={`fixed h-screen bg-lightIndigo p-5 mt-[50px] pt-8 pb-[100px] overflow-y-scroll scrollbar scrollbar-thumb-rose-500 scrollbar-track-slate-700 ${
-          open ? "w-72" : "w-20"
+          open
+            ? `w-[20vw] ${setPageWidth("80vw")}`
+            : `w-[5vw] ${setPageWidth("95vw")}`
         } duration-300`}
       >
         <ul className="pt-2">
@@ -152,18 +156,13 @@ const SideNav = (props) => {
           <BsChevronDoubleLeft
             className={`absolute bg-white text-darkIndigo text-3xl p-2 rounded-full self-center mt-5 mb-10 border border-darkIndigo cursor-pointer ${
               !open && "rotate-180"
-            }`}
+            } duration-300`}
             onClick={() => {
               setOpen(!open);
-              // dispatch({ type: "TOGGLE_MENU" });
             }}
           />
         </div>
       </div>
-
-      {/* <div className="p-7">
-        <h1 className="text-2xl font-semibold">Homepage</h1>
-      </div> */}
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../dist/main.css";
 import { FaToriiGate, FaRandom, FaCoins } from "react-icons/fa";
 import {
@@ -16,11 +16,15 @@ import logo from "../public/logo.svg";
 import { styles } from "@/styles";
 import Roadmap from "./Roadmap";
 import Footer from "./Footer";
-
 import Carousel from "./Carousel";
+import { useGlobalContext } from "@/app/Context/store";
+
 const Home = () => {
+  const { pageWidth } = useGlobalContext();
   return (
-    <div className="h-auto w-[80vw] object-fill select-none relatives mt-[50px] bg-darkIndigo bg-black overflow-x-none">
+    <div
+      className={`h-auto w-[${pageWidth}] object-fill select-none relatives mt-[50px] bg-darkIndigo overflow-x-none`}
+    >
       <div className="basis-10/12 bg-darkIndigo box-content">
         <div>
           <Carousel />

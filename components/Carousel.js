@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
+import { useGlobalContext } from "@/app/Context/store";
 
 const sliderImages = [
   "/slider-img1.png",
@@ -12,6 +13,7 @@ let count = 0;
 const slideLength = sliderImages.length;
 
 const Carousel = () => {
+  const { pageWidth } = useGlobalContext();
   const [index, setIndex] = useState(0);
   const [curr, setCurr] = useState(0);
   const imageRef = useRef();
@@ -57,12 +59,17 @@ const Carousel = () => {
   };
   return (
     <div ref={imageRef}>
-      <div className="aspect-auto h-auto w-[80vw] bg-black">
-        <img src={sliderImages[index]} className="h-[90vh] w-[80vw]"></img>
+      <div className={`aspect-auto bg-darkIndigo h-auto w-[${pageWidth}]`}>
+        <img
+          src={sliderImages[index]}
+          className={`h-[90vh] w-[${pageWidth}]`}
+        ></img>
         {/* <Image src={sliderImages[index]} alt="" height="500" width="1200" /> */}
       </div>
 
-      <div className="absolute w-[80vw] top-1/2 transform -translate-y-1/2  px-3 flex justify-between items-center">
+      <div
+        className={`absolute w-[${pageWidth}] top-1/2 transform -translate-y-1/2  px-3 flex justify-between items-center`}
+      >
         <button
           className="bg-black text-white p-1 rounded-full bg-opacity-50 cursor-pointer hover:bg-opacity-100 transition "
           onClick={handleOnPrevClick}
