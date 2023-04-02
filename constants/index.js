@@ -11,11 +11,12 @@ import {
 } from "react-icons/md";
 
 export const Menus = [
-  { title: "Home", icon: <AiOutlineHome />, active: true },
-  { title: "Airdrop", icon: <TbAirBalloon /> },
+  { title: "Home", icon: <AiOutlineHome />, tooltip: "Home", active: true },
+  { title: "Airdrop", tooltip: "Airdrop", icon: <TbAirBalloon /> },
   {
     title: "Sports",
     icon: <MdSportsVolleyball />,
+    tooltip: "Sports",
     submenu: true,
     submenuItems: [
       { title: "submenu 1" },
@@ -26,6 +27,7 @@ export const Menus = [
   {
     title: "Casino",
     icon: <MdOutlineCasino />,
+    tooltip: "Casino",
     submenu: true,
     submenuItems: [
       { title: "submenu 1" },
@@ -36,6 +38,7 @@ export const Menus = [
   {
     title: "Marketplace",
     icon: <BsCashCoin />,
+    tooltip: "MarketPlace",
     submenu: true,
     submenuItems: [
       { title: "submenu 1" },
@@ -43,13 +46,12 @@ export const Menus = [
       { title: "submenu 3" },
     ],
   },
-  { title: "Token", icon: <MdToken /> },
+  { title: "Token", icon: <MdToken />, tooltip: "Token" },
 ];
 
 export const InfoMenus = [
   {
     title: "Information",
-    id: 1,
     submenu: true,
     submenuItems: [
       { title: "submenu 1" },
@@ -60,7 +62,6 @@ export const InfoMenus = [
 
   {
     title: "Links",
-    id: 2,
     submenu: true,
     submenuItems: [
       { title: "submenu 1" },

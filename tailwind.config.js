@@ -7,6 +7,7 @@ module.exports = {
     "./public/**/*.{html,js}",
     "./sections/**/*.{html,js}",
     "./styles/**/*.{html,js}",
+    "./node_modules/tw-elements/dist/js/**/*.js",
   ],
   theme: {
     screens: {
@@ -35,5 +36,6 @@ module.exports = {
   plugins: [
     require("@tailwindcss/aspect-ratio"),
     require("tailwind-scrollbar")({ nocompatible: true }),
+    require("tw-elements/dist/plugin"),
   ],
 };

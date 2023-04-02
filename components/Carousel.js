@@ -13,7 +13,7 @@ let count = 0;
 const slideLength = sliderImages.length;
 
 const Carousel = () => {
-  const { pageWidth } = useGlobalContext();
+  const { pageWidth, setPageWidth, open, setOpen } = useGlobalContext();
   const [index, setIndex] = useState(0);
   const [curr, setCurr] = useState(0);
   const imageRef = useRef();
@@ -47,6 +47,7 @@ const Carousel = () => {
   const handleOnNextClick = () => {
     count = (count + 1) % slideLength;
     setIndex(count);
+    console.log(pageWidth);
 
     imageRef.current.classList.add("fade-animation");
   };
@@ -54,21 +55,28 @@ const Carousel = () => {
   const handleOnPrevClick = () => {
     count = (index + slideLength - 1) % slideLength;
     setIndex(count);
+    console.log(pageWidth);
 
     imageRef.current.classList.add("fade-animation");
   };
   return (
     <div ref={imageRef}>
-      <div className={`aspect-auto bg-darkIndigo h-auto w-[${pageWidth}]`}>
+      <div
+        className={`aspect-video bg-darkIndigo h-auto ${
+          open ? "w-[80vw]" : "w-[95vw]"
+        }`}
+      >
         <img
           src={sliderImages[index]}
-          className={`h-[90vh] w-[${pageWidth}]`}
+          className={`h-[90vh] ${open ? "w-[80vw]" : "w-[95vw]"}`}
         ></img>
         {/* <Image src={sliderImages[index]} alt="" height="500" width="1200" /> */}
       </div>
 
       <div
-        className={`absolute w-[${pageWidth}] top-1/2 transform -translate-y-1/2  px-3 flex justify-between items-center`}
+        className={`absolute ${
+          open ? "w-[80vw]" : "w-[95vw]"
+        } top-1/2 transform -translate-y-1/2  px-3 flex justify-between items-center`}
       >
         <button
           className="bg-black text-white p-1 rounded-full bg-opacity-50 cursor-pointer hover:bg-opacity-100 transition "
