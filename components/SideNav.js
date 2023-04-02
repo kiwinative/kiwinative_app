@@ -1,5 +1,4 @@
 import React, { useContext, useState } from "react";
-import * as te from "tw-elements";
 import {
   BsChevronDown,
   BsChevronDoubleLeft,

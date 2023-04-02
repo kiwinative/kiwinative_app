@@ -10,7 +10,7 @@ const HomePage = () => {
   return (
     <>
       <Header />
-      <div className="flex flex-row bg-darkIndigo">
+      <div className="flex flex-row bg-darkIndigo overflow-x-hidden">
         <div className="w-[20vw]">
           <SideNav />
         </div>

@@ -23,7 +23,7 @@ const Carousel = () => {
     imageRef.current.addEventListener("animationend", removeAnimation);
     imageRef.current.addEventListener("mouseenter", stopSlide);
     imageRef.current.addEventListener("mouseleave", startSlide);
-    // startSlide();
+    startSlide();
 
     return () => {
       stopSlide();
@@ -64,11 +64,13 @@ const Carousel = () => {
       <div
         className={`aspect-video bg-darkIndigo h-auto ${
           open ? "w-[80vw]" : "w-[95vw]"
-        }`}
+        } rounded-lg`}
       >
         <img
           src={sliderImages[index]}
-          className={`h-[90vh] ${open ? "w-[80vw]" : "w-[95vw]"}`}
+          className={`h-[90vh] ${
+            open ? "w-[80vw]" : "w-[93.5vw]"
+          } ml-2 rounded-lg`}
         ></img>
         {/* <Image src={sliderImages[index]} alt="" height="500" width="1200" /> */}
       </div>

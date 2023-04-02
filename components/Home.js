@@ -17,6 +17,7 @@ import { styles } from "@/styles";
 import Roadmap from "./Roadmap";
 import Footer from "./Footer";
 import Carousel from "./Carousel";
+// import Carousel2 from "./Carousel2";
 import { useGlobalContext } from "@/app/Context/store";
 
 const Home = () => {
