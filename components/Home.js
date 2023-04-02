@@ -19,6 +19,7 @@ import Footer from "./Footer";
 import Carousel from "./Carousel";
 // import Carousel2 from "./Carousel2";
 import { useGlobalContext } from "@/app/Context/store";
+import { DoughnutChart } from "./DoughnutChart";
 
 const Home = () => {
   const { pageWidth } = useGlobalContext();
@@ -231,7 +232,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className={`h-screen w-[${pageWidth}] flex flex-col`}>
+          <div className={`h-auto w-[${pageWidth}] flex flex-col`}>
             <h1 className={styles.subHeaderText}>
               How much Kiwinative has been minted
             </h1>
@@ -267,10 +268,9 @@ const Home = () => {
                 </h1>
               </div>
             </div>
-            {/* <div className="h-screen container-none flex flex-row gap-5 items-center">
-                <Piechart />
-                <Barchart />
-              </div> */}
+            <div className="h-[80vh] flex items-center justify-center mt-10">
+              <DoughnutChart />
+            </div>
           </div>
 
           <Roadmap />
