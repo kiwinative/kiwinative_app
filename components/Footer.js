@@ -1,17 +1,20 @@
 import React from "react";
 import { BsStack, BsTwitter, BsDiscord } from "react-icons/bs";
-import { TbBrandTelegram, TbBrandReddit } from "react-icons/tb";
+import { FaTelegramPlane } from "react-icons/fa";
+import { GrReddit } from "react-icons/gr";
+import { useGlobalContext } from "@/app/Context/store";
 
 export default function Footer() {
+  const { open, pageWidth, setPageWidth } = useGlobalContext();
   return (
-    <div className="h-auto w-[80vw]">
-      <div className="bg-lightIndigo mx-[60px] p-12 bg-lightIndigo rounded-xl mb-5">
+    <div className={`h-auto w-[${pageWidth}]`}>
+      <div className=" mx-[60px] p-12 pb-3 bg-lightIndigo rounded-xl mb-5">
         <div>
-          <h1 className="text-darkWhite font-black text-darkWhite text-center lg:text-[35px] sm:text-[25px] xs:text-[15px] text-[25px] pb-10">
+          <h1 className="font-black text-darkWhite text-center lg:text-[35px] sm:text-[25px] xs:text-[15px] text-[25px] pb-10">
             Don't miss out. Stay updated.
           </h1>
         </div>
-        <div className="inline-flex gap-x-10 items-center text-center mb-10 ml-[18vw]">
+        <div className="flex flex-row gap-x-10 items-center text-center mb-10 justify-center">
           <form>
             <input
               type="text"
@@ -24,21 +27,21 @@ export default function Footer() {
           </button>
         </div>
         <div>
-          <h1 className="text-darkWhite text-center">
+          <h1 className=" text-sm text-darkWhite text-center">
             Disclaimer: Lorem ipsum dolor sit amet, consectetur adipisci elit,
             sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut
             enim ad minim veniam, quis nostrum exercitationem ullam corporis
             suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
           </h1>
         </div>
-        <div className="inline-flex gap-x-7 items-center py-3 text-center ml-[30vw]">
-          <BsTwitter className="text-white" size={120} />
-          <TbBrandTelegram className="text-white text-[70px]" />
-          <TbBrandReddit className="text-white text-[70px]" />
-          <BsDiscord className="text-white text-[70px]" />
+        <div className="flex flex-row gap-x-7 items-center py-3 text-center justify-center">
+          <BsTwitter className="text-white text-[30px] bg-lightGreen p-2 rounded-full" />
+          <FaTelegramPlane className="text-white text-[30px] bg-lightGreen p-2 rounded-full" />
+          <GrReddit className="text-white text-[30px] bg-lightGreen p-2 rounded-full" />
+          <BsDiscord className="text-white text-[30px] bg-lightGreen p-2 rounded-full" />
         </div>
         <div>
-          <p className="text-darkWhite text-center pt-4">
+          <p className="text-sm text-darkWhite text-center">
             Copyright &#169;2023. All rights reserved by Kiwinative.
           </p>
         </div>

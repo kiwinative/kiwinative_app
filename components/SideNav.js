@@ -35,7 +35,7 @@ const SideNav = (props) => {
       <div
         className={`fixed h-screen bg-lightIndigo p-5 mt-[50px] pt-8 pb-[100px] overflow-y-scroll scrollbar scrollbar-thumb-rose-500 scrollbar-track-slate-700 ${
           open
-            ? `w-[20vw] ${setPageWidth("80vw")}`
+            ? `w-[20vw] ${setPageWidth("80vw")} ${setTooltip(false)}`
             : `w-[5vw] ${setPageWidth("95vw")}`
         } duration-300`}
       >
@@ -65,7 +65,11 @@ const SideNav = (props) => {
                   {menu.title}
                 </span>
 
-                <span className="group/edit invisible hover:lightIndigo group-hover/item:visible items-center">
+                <span
+                  className={`group/edit invisible hover:lightIndigo group-hover/item:${
+                    open ? "invisible" : "visible"
+                  }  items-center`}
+                >
                   <span
                     className={`group-hover/edit:text-white inline-block text-center text-xs rounded-lg m4-10 fixed bg-darkGreen px-2 py-1 z-15`}
                   >

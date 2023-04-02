@@ -3,11 +3,10 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-
 import "react-vertical-timeline-component/style.min.css";
-
 import { styles } from "../styles";
 import { roadmaps } from "../constants";
+import { useGlobalContext } from "@/app/Context/store";
 
 const RoadmapCard = ({ roadmap }) => {
   return (
@@ -48,8 +47,9 @@ const RoadmapCard = ({ roadmap }) => {
 };
 
 const Roadmap = () => {
+  const { pageWidth } = useGlobalContext();
   return (
-    <div className="h-full w-[80vw] p-20">
+    <div className={`h-full w-[${pageWidth}] p-20`}>
       <h1 className={styles.subHeaderText}>Our journey so far</h1>
       <h1 className={styles.headerText}>ROADMAP</h1>
 

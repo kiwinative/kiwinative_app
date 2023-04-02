@@ -70,7 +70,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="h-screen">
+          <div className={`h-screen w-[${pageWidth}]`}>
             <h1 className={`${styles.subHeaderText}`}>
               What to know about Kiwinative
             </h1>
@@ -104,7 +104,9 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="h-screen container-none flex flex-col justify-center items-center p-20">
+          <div
+            className={`h-screen w-[${pageWidth}] flex flex-col justify-center items-center place-content-centers p-20`}
+          >
             <h1 className={styles.subHeaderText}>Objectives of the Project</h1>
             <h1 className={styles.headerText}>Why Kiwinative?</h1>
             <div className="container-none flex flex-row flex-wrap items-center">
@@ -146,7 +148,9 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="h-screen container-none flex flex-col justify-center items-center p-20">
+          <div
+            className={`h-screen w-[${pageWidth}] container-none flex flex-col justify-center items-center p-20`}
+          >
             <h1 className={styles.subHeaderText}>
               Real-world uses of Kiwinative
             </h1>
@@ -227,7 +231,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="h-screen flex flex-col">
+          <div className={`h-screen w-[${pageWidth}] flex flex-col`}>
             <h1 className={styles.subHeaderText}>
               How much Kiwinative has been minted
             </h1>
