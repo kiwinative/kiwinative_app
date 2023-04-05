@@ -1,7 +1,5 @@
 "use client";
 import "../dist/main.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import { GlobalContextProvider } from "./Context/store";
 
 export default function RootLayout({ children }) {

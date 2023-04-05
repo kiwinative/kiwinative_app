@@ -26,8 +26,12 @@ const SideNav = (props) => {
     setLinksubmenuOpen,
     pageWidth,
     setPageWidth,
+    sidenavWidth,
+    setSidenavWidth,
     tooltip,
     setTooltip,
+    mobileview,
+    setMobileview,
   } = useGlobalContext();
 
   return (
@@ -37,7 +41,7 @@ const SideNav = (props) => {
           open
             ? `w-[20vw] ${setPageWidth("80vw")} ${setTooltip(false)}`
             : `w-[5vw] ${setPageWidth("95vw")}`
-        } duration-300`}
+        } duration-300 `}
       >
         <ul className="pt-2">
           {Menus.map((menu, index) => (
@@ -66,8 +70,9 @@ const SideNav = (props) => {
                 </span>
 
                 <span
-                  className={`group/edit invisible hover:lightIndigo group-hover/item:${
+                  className={`group/edit invisible group-hover/item:${
                     open ? "invisible" : "visible"
+                  }
                   }  items-center`}
                 >
                   <span

@@ -55,7 +55,7 @@ const Carousel = () => {
   const handleOnPrevClick = () => {
     count = (index + slideLength - 1) % slideLength;
     setIndex(count);
-    console.log(pageWidth);
+    console.log(pageWidth, window.innerWidth);
 
     imageRef.current.classList.add("fade-animation");
   };

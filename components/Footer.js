@@ -19,7 +19,7 @@ export default function Footer() {
             <input
               type="text"
               placeholder="Enter your email address"
-              className="py-2 px-8 rounded-3xl bg-[#6c8726] opacity-20 text-darkWhite"
+              className="py-2 px-8 rounded-3xl bg-[#6c8726] opacity-20 text-white"
             />
           </form>
           <button className="items-center text-white font-bold py-2 px-4 rounded-full bg-lightGreen hover:bg-darkGreen">
