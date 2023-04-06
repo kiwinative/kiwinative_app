@@ -25,45 +25,47 @@ const Home = () => {
   const { pageWidth } = useGlobalContext();
   return (
     <div
-      className={`h-auto w-[${pageWidth}] object-fill select-none relatives mt-[50px] bg-darkIndigo overflow-x-none`}
+      className={`h-auto w-[${pageWidth}] object-fill select-none relatives mt-[50px] overflow-x-none`}
     >
       <div className="basis-10/12 bg-darkIndigo box-content">
         <div>
           <Carousel />
 
-          <div className="pb-10 bg-lightIndigo">
+          <div
+            className={`w-[100vw] px-1 sm:w-[${pageWidth}] pb-10 bg-lightIndigo`}
+          >
             <h1 className={`${styles.headerText} mt-5 pt-5`}>
               Supported Exchanges
             </h1>
             <div>
-              <div className="container-none flex flex-row gap-10 justify-evenly pt-3">
+              <div className="flex flex-row flex-wrap gap-4 sm:gap-10 justify-evenly pt-3">
                 <div className="flex flex-row items-center">
-                  <FaToriiGate size={40} className="text-red-500" />
-                  <p className="text-center pl-5 text-lg font-bold align-middle text-darkWhite">
-                    Gate.io
+                  <FaToriiGate className="text-red-500 text-[25px] sm:text-[40px]" />
+                  <p className="text-center pl-2 sm:pl-5 text-base sm:text-lg font-bold align-middle text-darkWhite">
+                    GATE.IO
                   </p>
                 </div>
                 <div className="flex flex-row items-center">
-                  <BsBank2 size={40} className="text-[#ffd700]" />
-                  <p className="text-center pl-5 text-lg font-bold align-middle text-darkWhite">
+                  <BsBank2 className="text-[#ffd700] text-[25px] sm:text-[40px]" />
+                  <p className="text-center pl-2 sm:pl-5 text-base sm:text-lg font-bold align-middle text-darkWhite">
                     LBANK
                   </p>
                 </div>
                 <div className="flex flex-row items-center">
-                  <SiStackbit size={40} className="text-orange-400" />
-                  <p className="text-center pl-5 text-lg font-bold align-middle text-darkWhite">
+                  <SiStackbit className="text-orange-400 text-[25px] sm:text-[40px]" />
+                  <p className="text-center pl-2 sm:pl-5 text-base sm:text-lg font-bold align-middle text-darkWhite">
                     HOTBIT
                   </p>
                 </div>
                 <div className="flex flex-row items-center">
-                  <FaRandom size={40} className="text-red-400" />
-                  <p className="text-center pl-5 text-lg font-bold align-middle text-darkWhite">
+                  <FaRandom className="text-red-400 text-[25px] sm:text-[40px]" />
+                  <p className="text-center pl-2 sm:pl-5 text-base sm:text-lg font-bold align-middle text-darkWhite">
                     WXYZ
                   </p>
                 </div>
                 <div className="flex flex-row items-center">
-                  <FaRandom size={40} className="text-rose-500" />
-                  <p className="text-center pl-5 text-lg font-bold align-middle text-darkWhite">
+                  <FaRandom className="text-rose-500 text-[25px] sm:text-[40px]" />
+                  <p className="text-center pl-2 sm:pl-5 text-base sm:text-lg font-bold align-middle text-darkWhite">
                     ABC
                   </p>
                 </div>
@@ -76,8 +78,8 @@ const Home = () => {
               What to know about Kiwinative
             </h1>
             <h1 className={styles.headerText}>About Kiwinative</h1>
-            <div className="container-none flex flex-row items-center p-20">
-              <div className="basis-1/2">
+            <div className="container-none flex flex-col sm:flex-row items-center p-20">
+              <div className="basis-1/2 pb-5">
                 <Image src={logo} alt="" height={400} width={400} />
               </div>
 

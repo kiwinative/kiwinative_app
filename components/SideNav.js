@@ -37,7 +37,7 @@ const SideNav = (props) => {
   return (
     <div>
       <div
-        className={`fixed h-screen bg-lightIndigo p-5 mt-[50px] pt-8 pb-[100px] overflow-y-scroll scrollbar scrollbar-thumb-rose-500 scrollbar-track-slate-700 ${
+        className={` hidden sm:block fixed h-screen bg-lightIndigo p-5 mt-[50px] pt-8 pb-[100px] overflow-y-scroll scrollbar scrollbar-thumb-rose-500 scrollbar-track-slate-700 ${
           open
             ? `w-[20vw] ${setPageWidth("80vw")} ${setTooltip(false)}`
             : `w-[5vw] ${setPageWidth("95vw")}`

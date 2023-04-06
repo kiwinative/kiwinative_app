@@ -5,6 +5,7 @@ import {
   Dispatch,
   SetStateAction,
   useState,
+  useEffect,
 } from "react";
 
 const GlobalContext = createContext({
@@ -20,6 +21,12 @@ export const GlobalContextProvider = ({ children }) => {
   const [sidenavWidth, setSidenavWidth] = useState("20vw");
   const [tooltip, setTooltip] = useState(false);
   const [mobileview, setMobileview] = useState(true);
+
+  useEffect(() => {
+    if (window.innerWidth < 480) {
+      setOpen(false);
+    }
+  }, []);
   return (
     <GlobalContext.Provider
       value={{

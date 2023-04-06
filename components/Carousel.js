@@ -63,21 +63,21 @@ const Carousel = () => {
     <div ref={imageRef}>
       <div
         className={`aspect-video bg-darkIndigo h-auto ${
-          open ? "w-[80vw]" : "w-[95vw]"
+          open ? "w-[80vw]" : "w-[100vw] sm:w-[95vw]"
         } rounded-lg`}
       >
         <img
           src={sliderImages[index]}
           className={`h-[90vh] ${
-            open ? "w-[80vw]" : "w-[93.5vw]"
-          } ml-2 rounded-lg`}
+            open ? "w-[80vw]" : "w-[100vw] sm:w-[93.5vw]"
+          } ml-0 sm:ml-2 rounded-lg`}
         ></img>
         {/* <Image src={sliderImages[index]} alt="" height="500" width="1200" /> */}
       </div>
 
       <div
         className={`absolute ${
-          open ? "w-[80vw]" : "w-[95vw]"
+          open ? "w-[80vw]" : "w-[100vw] sm:w-[95vw]"
         } top-1/2 transform -translate-y-1/2  px-3 flex justify-between items-center`}
       >
         <button
