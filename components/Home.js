@@ -108,12 +108,12 @@ const Home = () => {
           </div>
 
           <div
-            className={`h-auto w-[${pageWidth}] relative flex flex-col justify-center items-center place-content-centers p-20`}
+            className={`h-auto w-[${pageWidth}] relative flex flex-col justify-center items-center place-content-centers p-10 sm:p-20`}
           >
             <h1 className={styles.subHeaderText}>Objectives of the Project</h1>
             <h1 className={styles.headerText}>Why Kiwinative?</h1>
-            <div className="container-none flex flex-row flex-wrap items-center mt-3">
-              <div className="basis-1/2 flex flex-row p-5 sm:p-10 items-center">
+            <div className="w-full flex flex-col sm:flex-row flex-wrap items-center mt-3">
+              <div className="basis-full sm:basis-1/2 flex flex-row p-5 sm:p-10 items-center">
                 <BsLightningFill size={65} className="text-orange-400" />
                 <p className="pl-8 text-white">
                   Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
@@ -121,7 +121,7 @@ const Home = () => {
                 </p>
               </div>
               <div className="basis-1/2 flex flex-row p-5 sm:p-10">
-                <BsFillPeopleFill size={65} className="text-green-500" />
+                <BsFillPeopleFill className="text-green-500 text-[65px]" />
                 <p className="pl-8 text-white">
                   Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
                   eiusmod tempor incidunt ut labore et dolore magna aliqua
@@ -152,14 +152,14 @@ const Home = () => {
           </div>
 
           <div
-            className={`h-auto w-[${pageWidth}] container-none flex flex-col justify-center items-center p-20`}
+            className={`h-auto w-[${pageWidth}] container-none flex flex-col justify-center items-center p-10 sm:p-20`}
           >
             <h1 className={styles.subHeaderText}>
               Real-world uses of Kiwinative
             </h1>
             <h1 className={styles.headerText}>Ecosytem</h1>
             <div className="container-none flex flex-row flex-wrap items-center">
-              <div className="basis-2/5 p-4 m-10 bg-lightIndigo rounded-lg">
+              <div className=" basis-full sm:basis-2/5 p-4 m-10 bg-lightIndigo rounded-xl">
                 <div className="container-none flex flex-row items-center">
                   <div className="basis-2/5">
                     <h1 className="text-2xl font-bold text-center text-darkWhite">
@@ -177,7 +177,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="basis-2/5 p-4 m-10 bg-lightIndigo rounded-lg">
+              <div className="basis-full sm:basis-2/5 p-4 m-10 bg-lightIndigo rounded-xl">
                 <div className="container-none flex flex-row items-center">
                   <div className="basis-2/5">
                     <h1 className="text-2xl font-bold text-center text-darkWhite">
@@ -195,7 +195,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="basis-2/5 p-4 m-10 bg-lightIndigo rounded-lg">
+              <div className="basis-full sm:basis-2/5 p-4 m-10 bg-lightIndigo rounded-xl">
                 <div className="container-none flex flex-row items-center">
                   <div className="basis-2/5">
                     <h1 className="text-2xl font-bold text-center text-darkWhite">
@@ -213,9 +213,9 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="basis-2/5 p-4 m-10 bg-lightIndigo rounded-lg">
+              <div className="basis-full sm:basis-2/5 p-4 m-10 bg-lightIndigo rounded-xl">
                 <div className="container-none flex flex-row items-center">
-                  <div className="basis-2/5">
+                  <div className="basis-2/6">
                     <h1 className="text-2xl font-bold text-center text-darkWhite">
                       04.
                     </h1>
@@ -223,7 +223,7 @@ const Home = () => {
                       MARKETPLACE
                     </h1>
                   </div>
-                  <div className="basis-3/5 border-l-2 border-lightGreen p-2">
+                  <div className="basis-4/6 border-l-2 border-lightGreen p-2">
                     <p className="text-center text-darkWhite">
                       Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
                       eiusmod tempor incidunt ut labore et dolore magna aliqua.
@@ -241,31 +241,31 @@ const Home = () => {
             <h1 className={styles.headerText}>TOKENOMICS</h1>
             <div className="container-none flex flex-row items-center justify-evenly mt-8">
               <div className="flex flex-col items-center">
-                <BsStack size={65} className="text-[#ffd700]" />
-                <h1 className="text-2xl pt-2 font-bold text-center text-darkWhite">
-                  LOREM-20
+                <BsStack className="text-[#ffd700] text-[45px] sm:text-[65px]" />
+                <h1 className="text-lg sm:text-2xl pt-2 font-bold text-center text-darkWhite">
+                  BEP-20
                 </h1>
-                <h1 className="text-xl text-center text-darkWhite">
-                  Lorem Token
+                <h1 className="text-sm sm:text-xl text-center text-darkWhite">
+                  BSC Token
                 </h1>
               </div>
               <div className="flex flex-col items-center">
-                <BsCoin size={65} className="text-[#ffd700]" />
-                <h1 className="text-2xl pt-2 font-bold text-center text-darkWhite">
+                <BsCoin className="text-[#ffd700] text-[45px] sm:text-[65px]" />
+                <h1 className="text-lg sm:text-2xl pt-2 font-bold text-center text-darkWhite">
                   $KIWINATIVE
                 </h1>
-                <h1 className="text-xl text-center text-darkWhite">
+                <h1 className="text-sm sm:text-xl text-center text-darkWhite">
                   Utility Token
                 </h1>
               </div>
               <div className="flex flex-col items-center">
-                <h1 className="text-7xl font-bold text-center text-green-500">
+                <h1 className=" text-4xl sm:text-7xl font-bold text-center text-green-500">
                   20B
                 </h1>
-                <h1 className="text-2xl pt-2 font-bold text-center text-darkWhite">
+                <h1 className=" text-lg sm:text-2xl pt-2 font-bold text-center text-darkWhite">
                   20 BILLION
                 </h1>
-                <h1 className="text-xl text-center text-darkWhite">
+                <h1 className=" text-sm sm:text-xl text-center text-darkWhite">
                   Total Supply
                 </h1>
               </div>

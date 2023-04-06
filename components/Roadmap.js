@@ -49,7 +49,7 @@ const RoadmapCard = ({ roadmap }) => {
 const Roadmap = () => {
   const { pageWidth } = useGlobalContext();
   return (
-    <div className={`h-full w-[${pageWidth}] p-20`}>
+    <div className={`h-full w-[${pageWidth}] p-10 sm:p-20`}>
       <h1 className={styles.subHeaderText}>Our journey so far</h1>
       <h1 className={styles.headerText}>ROADMAP</h1>
 

@@ -62,13 +62,13 @@ const Carousel = () => {
   return (
     <div ref={imageRef}>
       <div
-        className={`aspect-video bg-darkIndigo h-auto ${
+        className={`aspect-video bg-darkIndigo h-50vh sm:h-auto ${
           open ? "w-[80vw]" : "w-[100vw] sm:w-[95vw]"
         } rounded-lg`}
       >
         <img
           src={sliderImages[index]}
-          className={`h-[90vh] ${
+          className={`h-[50vh] sm:h-[90vh] ${
             open ? "w-[80vw]" : "w-[100vw] sm:w-[93.5vw]"
           } ml-0 sm:ml-2 rounded-lg`}
         ></img>
@@ -78,7 +78,7 @@ const Carousel = () => {
       <div
         className={`absolute ${
           open ? "w-[80vw]" : "w-[100vw] sm:w-[95vw]"
-        } top-1/2 transform -translate-y-1/2  px-3 flex justify-between items-center`}
+        } top-1/3 sm:top-1/2 transform -translate-y-1/2  px-3 flex justify-between items-center`}
       >
         <button
           className="bg-black text-white p-1 rounded-full bg-opacity-50 cursor-pointer hover:bg-opacity-100 transition "
