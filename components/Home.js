@@ -73,13 +73,13 @@ const Home = () => {
             </div>
           </div>
 
-          <div className={`h-screen w-[${pageWidth}]`}>
+          <div className={`h-auto sm:h-screen w-[${pageWidth}]`}>
             <h1 className={`${styles.subHeaderText}`}>
               What to know about Kiwinative
             </h1>
             <h1 className={styles.headerText}>About Kiwinative</h1>
             <div className="container-none flex flex-col sm:flex-row items-center p-20">
-              <div className="basis-1/2 pb-5">
+              <div className="basis-1/2 pb-6">
                 <Image src={logo} alt="" height={400} width={400} />
               </div>
 
@@ -108,40 +108,40 @@ const Home = () => {
           </div>
 
           <div
-            className={`h-screen w-[${pageWidth}] flex flex-col justify-center items-center place-content-centers p-20`}
+            className={`h-auto w-[${pageWidth}] relative flex flex-col justify-center items-center place-content-centers p-20`}
           >
             <h1 className={styles.subHeaderText}>Objectives of the Project</h1>
             <h1 className={styles.headerText}>Why Kiwinative?</h1>
-            <div className="container-none flex flex-row flex-wrap items-center">
-              <div className="basis-1/2 flex flex-row p-10 items-center">
+            <div className="container-none flex flex-row flex-wrap items-center mt-3">
+              <div className="basis-1/2 flex flex-row p-5 sm:p-10 items-center">
                 <BsLightningFill size={65} className="text-orange-400" />
                 <p className="pl-8 text-white">
                   Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
                   eiusmod tempor incidunt ut labore et dolore magna aliqua
                 </p>
               </div>
-              <div className="basis-1/2 flex flex-row p-10">
+              <div className="basis-1/2 flex flex-row p-5 sm:p-10">
                 <BsFillPeopleFill size={65} className="text-green-500" />
                 <p className="pl-8 text-white">
                   Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
                   eiusmod tempor incidunt ut labore et dolore magna aliqua
                 </p>
               </div>
-              <div className="basis-1/2 flex flex-row p-10">
+              <div className="basis-1/2 flex flex-row p-5 sm:p-10">
                 <BsFillShieldSlashFill size={65} className="text-green-500" />
                 <p className="pl-8 text-white">
                   Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
                   eiusmod tempor incidunt ut labore et dolore magna aliqua
                 </p>
               </div>
-              <div className="basis-1/2 flex flex-row p-10">
+              <div className="basis-1/2 flex flex-row p-5 sm:p-10">
                 <FaCoins size={65} className="text-[#ffd700]" />
                 <p className="pl-8 text-white">
                   Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
                   eiusmod tempor incidunt ut labore et dolore magna aliqua
                 </p>
               </div>
-              <div className="basis-1/2 flex flex-row p-10">
+              <div className="basis-1/2 flex flex-row p-5 sm:p-10">
                 <BsCurrencyExchange size={65} className="text-[#ffd700]" />
                 <p className="pl-8 text-white">
                   Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
@@ -152,7 +152,7 @@ const Home = () => {
           </div>
 
           <div
-            className={`h-screen w-[${pageWidth}] container-none flex flex-col justify-center items-center p-20`}
+            className={`h-auto w-[${pageWidth}] container-none flex flex-col justify-center items-center p-20`}
           >
             <h1 className={styles.subHeaderText}>
               Real-world uses of Kiwinative
