@@ -14,15 +14,15 @@ export default function Footer() {
             Don't miss out. Stay updated.
           </h1>
         </div>
-        <div className="flex flex-row gap-x-8 sm:gap-x-10 items-center text-center mb-10 justify-center">
+        <div className="flex flex-row gap-x-7 sm:gap-x-10 items-center text-center mb-10 justify-center">
           <form>
             <input
               type="text"
               placeholder="Enter your email address"
-              className="py-2 px-4 sm:px-8 rounded-3xl bg-[#6c8726] opacity-20 text-white"
+              className="py-2 px-2 sm:px-8 rounded-3xl bg-[#6c8726] opacity-20 text-white"
             />
           </form>
-          <button className="items-center text-white sm:font-bold py-2 px-4 rounded-full bg-lightGreen hover:bg-darkGreen">
+          <button className="items-center text-white text-sm sm:font-bold py-2 px-4 rounded-full bg-lightGreen hover:bg-darkGreen">
             Connect <span className="hidden sm:block">Wallet</span>
           </button>
         </div>

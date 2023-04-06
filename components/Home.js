@@ -78,7 +78,7 @@ const Home = () => {
               What to know about Kiwinative
             </h1>
             <h1 className={styles.headerText}>About Kiwinative</h1>
-            <div className="container-none flex flex-col sm:flex-row items-center p-20">
+            <div className="container-none flex flex-col sm:flex-row items-center p-10 sm:p-20">
               <div className="basis-1/2 pb-6">
                 <Image src={logo} alt="" height={400} width={400} />
               </div>
