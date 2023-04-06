@@ -32,7 +32,7 @@ const Home = () => {
           <Carousel />
 
           <div
-            className={`w-[100vw] px-1 sm:w-[${pageWidth}] pb-10 bg-lightIndigo`}
+            className={`w-[100vw] px-1 md:w-[${pageWidth}] pb-10 bg-lightIndigo`}
           >
             <h1 className={`${styles.headerText} mt-5 pt-5`}>
               Supported Exchanges
@@ -73,7 +73,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className={`h-auto sm:h-screen w-[${pageWidth}]`}>
+          <div className={`h-auto md:h-screen w-[${pageWidth}]`}>
             <h1 className={`${styles.subHeaderText}`}>
               What to know about Kiwinative
             </h1>
@@ -108,7 +108,7 @@ const Home = () => {
           </div>
 
           <div
-            className={`h-auto w-[${pageWidth}] relative flex flex-col justify-center items-center place-content-centers p-10 sm:p-20`}
+            className={`h-auto md:h-screen w-[${pageWidth}] relative flex flex-col justify-center items-center place-content-centers p-10 sm:p-20`}
           >
             <h1 className={styles.subHeaderText}>Objectives of the Project</h1>
             <h1 className={styles.headerText}>Why Kiwinative?</h1>
@@ -159,7 +159,7 @@ const Home = () => {
             </h1>
             <h1 className={styles.headerText}>Ecosytem</h1>
             <div className="container-none flex flex-row flex-wrap items-center">
-              <div className=" basis-full sm:basis-2/5 p-4 m-10 bg-lightIndigo rounded-xl">
+              <div className=" basis-full md:basis-2/5 p-4 m-10 bg-lightIndigo rounded-xl">
                 <div className="container-none flex flex-row items-center">
                   <div className="basis-2/5">
                     <h1 className="text-2xl font-bold text-center text-darkWhite">
@@ -177,7 +177,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="basis-full sm:basis-2/5 p-4 m-10 bg-lightIndigo rounded-xl">
+              <div className="basis-full md:basis-2/5 p-4 m-10 bg-lightIndigo rounded-xl">
                 <div className="container-none flex flex-row items-center">
                   <div className="basis-2/5">
                     <h1 className="text-2xl font-bold text-center text-darkWhite">
@@ -195,7 +195,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="basis-full sm:basis-2/5 p-4 m-10 bg-lightIndigo rounded-xl">
+              <div className="basis-full md:basis-2/5 p-4 m-10 bg-lightIndigo rounded-xl">
                 <div className="container-none flex flex-row items-center">
                   <div className="basis-2/5">
                     <h1 className="text-2xl font-bold text-center text-darkWhite">
@@ -213,9 +213,9 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="basis-full sm:basis-2/5 p-4 m-10 bg-lightIndigo rounded-xl">
+              <div className="basis-full md:basis-2/5 p-4 m-10 bg-lightIndigo rounded-xl">
                 <div className="container-none flex flex-row items-center">
-                  <div className="basis-2/6">
+                  <div className="basis-2/5">
                     <h1 className="text-2xl font-bold text-center text-darkWhite">
                       04.
                     </h1>
@@ -223,7 +223,7 @@ const Home = () => {
                       MARKETPLACE
                     </h1>
                   </div>
-                  <div className="basis-4/6 border-l-2 border-lightGreen p-2">
+                  <div className="basis-3/5 border-l-2 border-lightGreen p-3">
                     <p className="text-center text-darkWhite">
                       Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
                       eiusmod tempor incidunt ut labore et dolore magna aliqua.

@@ -13,11 +13,11 @@ const HomePage = () => {
       <Header />
       <div className="flex flex-row bg-darkIndigo overflow-x-hidden">
         {/* <div className={`w-0 md:w-[${sidenavWidth}]`}> */}
-        <div className={`hidden sm:block w-[20vw]`}>
+        <div className={`hidden md:block w-[20vw]`}>
           <SideNav />
         </div>
 
-        <div className={`w-[100vw] sm:w-[${pageWidth}] bg-darkIndigo`}>
+        <div className={`w-[100vw] md:w-[${pageWidth}] bg-darkIndigo`}>
           <Home />
         </div>
       </div>

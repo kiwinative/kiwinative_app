@@ -37,17 +37,17 @@ const SideNav = (props) => {
   return (
     <div>
       <div
-        className={` hidden sm:block fixed h-screen bg-lightIndigo p-5 mt-[50px] pt-8 pb-[100px] overflow-y-scroll scrollbar scrollbar-thumb-rose-500 scrollbar-track-slate-700 ${
+        className={` hidden md:block fixed h-screen bg-lightIndigo p-5 mt-[50px] pt-8 pb-[100px] overflow-y-scroll scrollbar scrollbar-thumb-rose-500 scrollbar-track-slate-700 ${
           open
-            ? `w-[20vw] ${setPageWidth("80vw")} ${setTooltip(false)}`
-            : `w-[5vw] ${setPageWidth("95vw")}`
+            ? `w-[20vw]`
+            : `w-[5vw]`
         } duration-300 `}
       >
         <ul className="pt-2">
           {Menus.map((menu, index) => (
             <>
               <li
-                key={index}
+                key={menu.id}
                 className={`group/item text-gray-300 text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-lightGreen hover:text-white active:bg-lightGreen active:text-white rounded-md ${
                   menu.spacing ? "mt-9" : "mt-2"
                 }`}
@@ -73,7 +73,7 @@ const SideNav = (props) => {
                   className={`group/edit invisible group-hover/item:${
                     open ? "invisible" : "visible"
                   }
-                  }  items-center`}
+                  } items-center`}
                 >
                   <span
                     className={`group-hover/edit:text-white inline-block text-center text-xs rounded-lg m4-10 fixed bg-darkGreen px-2 py-1 z-15`}
@@ -96,7 +96,7 @@ const SideNav = (props) => {
             {InfoMenus.map((menu, index) => (
               <>
                 <li
-                  key={index}
+                  key={menu.id}
                   className={`text-gray-300 text-sm flex items-center gap-x-1 cursor-pointer p-2 hover:bg-lightGreen hover:text-white active:bg-lightGreen active:text-white rounded-md`}
                 >
                   <span
@@ -129,7 +129,7 @@ const SideNav = (props) => {
                   <ul>
                     {menu.submenuItems.map((submenuItem, index) => (
                       <li
-                        key={index}
+                        key={submenuItem.id}
                         className="text-gray-300 text-sm flex items-center cursor-pointer p-1 pl-2 hover:bg-lightGreen hover:text-white active:bg-lightGreen active:text-white rounded-md"
                       >
                         {submenuItem.title}
@@ -142,7 +142,7 @@ const SideNav = (props) => {
                   <ul>
                     {menu.submenuItems.map((submenuItem, index) => (
                       <li
-                        key={index}
+                        key={submenuItem.id}
                         className="text-gray-300 text-sm flex items-center cursor-pointer p-1 pl-2 hover:bg-lightGreen hover:text-white active:bg-lightGreen active:text-white rounded-md"
                       >
                         {submenuItem.title}
