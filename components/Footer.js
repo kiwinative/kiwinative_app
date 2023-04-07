@@ -5,25 +5,25 @@ import { GrReddit } from "react-icons/gr";
 import { useGlobalContext } from "@/app/Context/store";
 
 export default function Footer() {
-  const { open, pageWidth, setPageWidth } = useGlobalContext();
+  const { open, pageWidth} = useGlobalContext();
   return (
     <div className={`h-auto w-[${pageWidth}]`}>
-      <div className=" mx-[60px] p-12 pb-3 bg-lightIndigo rounded-xl mb-5">
+      <div className="mx-[15px] md:mx-[60px] lg:mx-[15px] md:max-lg:mx-[15px] p-12 pb-3 bg-lightIndigo rounded-xl mb-5">
         <div>
           <h1 className="font-black text-darkWhite text-center lg:text-[35px] sm:text-[25px] xs:text-[15px] text-[25px] pb-10">
-            Don't miss out. Stay updated.
+            Stay updated. Don't miss out!
           </h1>
         </div>
-        <div className="flex flex-row gap-x-10 items-center text-center mb-10 justify-center">
+        <div className="flex flex-row gap-x-7 sm:gap-x-10 items-center text-center mb-10 justify-center">
           <form>
             <input
               type="text"
               placeholder="Enter your email address"
-              className="py-2 px-8 rounded-3xl bg-[#6c8726] opacity-20 text-white"
+              className="py-2 px-2 sm:px-8 rounded-3xl bg-[#6c8726] opacity-20 text-white"
             />
           </form>
-          <button className="items-center text-white font-bold py-2 px-4 rounded-full bg-lightGreen hover:bg-darkGreen">
-            Connect Wallet
+          <button className="items-center text-white text-inline w-auto text-sm md:font-bold py-2 px-4 rounded-full bg-lightGreen hover:bg-darkGreen">
+            Connect <span className="hidden sm:inline-block">Wallet</span>
           </button>
         </div>
         <div>

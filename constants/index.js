@@ -11,62 +11,52 @@ import {
 } from "react-icons/md";
 
 export const Menus = [
-  { title: "Home", icon: <AiOutlineHome />, tooltip: "Home", active: true },
-  { title: "Airdrop", tooltip: "Airdrop", icon: <TbAirBalloon /> },
+  { title: "Home",id: 1, icon: <AiOutlineHome />, tooltip: "Home", active: true },
+  { title: "Airdrop",id: 2, tooltip: "Airdrop", icon: <TbAirBalloon /> },
   {
     title: "Sports",
+    id: 3,
     icon: <MdSportsVolleyball />,
     tooltip: "Sports",
-    submenu: true,
-    submenuItems: [
-      { title: "submenu 1" },
-      { title: "submenu 2" },
-      { title: "submenu 3" },
-    ],
+    submenu: false,
   },
   {
     title: "Casino",
+    id: 4,
     icon: <MdOutlineCasino />,
     tooltip: "Casino",
-    submenu: true,
-    submenuItems: [
-      { title: "submenu 1" },
-      { title: "submenu 2" },
-      { title: "submenu 3" },
-    ],
+    submenu: false,
   },
   {
     title: "Marketplace",
+    id: 5,
     icon: <BsCashCoin />,
     tooltip: "MarketPlace",
-    submenu: true,
-    submenuItems: [
-      { title: "submenu 1" },
-      { title: "submenu 2" },
-      { title: "submenu 3" },
-    ],
+    submenu: false,
   },
-  { title: "Token", icon: <MdToken />, tooltip: "Token" },
+  { title: "Token",id: 6, icon: <MdToken />, tooltip: "Token" },
 ];
 
 export const InfoMenus = [
   {
     title: "Information",
+    id: 1,
     submenu: true,
     submenuItems: [
-      { title: "submenu 1" },
-      { title: "submenu 2" },
-      { title: "submenu 3" },
+      { title: "submenu 1", id: 1, },
+      { title: "submenu 2", id: 2, },
+      { title: "submenu 3", id: 3, },
     ],
   },
 
   {
     title: "Links",
+    id: 2,
     submenu: true,
     submenuItems: [
-      { title: "submenu 1" },
-      { title: "submenu 2" },
-      { title: "submenu 3" },
+      { title: "submenu 1", id: 1, },
+      { title: "submenu 2", id: 2, },
+      { title: "submenu 3", id: 3, },
     ],
   },
 ];

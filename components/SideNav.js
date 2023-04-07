@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import {
   BsChevronDown,
   BsChevronDoubleLeft,
@@ -34,26 +34,32 @@ const SideNav = (props) => {
     setMobileview,
   } = useGlobalContext();
 
+  // useEffect(() => {
+  //   if(open && (window.innerWidth < 976) && (window.innerWidth > 769)){
+  //     setPageWidth("75vw")
+  //   }
+  // }, [open])
+
   return (
     <div>
       <div
-        className={` hidden sm:block fixed h-screen bg-lightIndigo p-5 mt-[50px] pt-8 pb-[100px] overflow-y-scroll scrollbar scrollbar-thumb-rose-500 scrollbar-track-slate-700 ${
+        className={`hidden md:block fixed h-screen bg-lightIndigo p-5 mt-[50px] pt-8 pb-[100px] overflow-y-scroll scrollbar scrollbar-thumb-rose-500 scrollbar-track-slate-700 ${
           open
-            ? `w-[20vw] ${setPageWidth("80vw")} ${setTooltip(false)}`
-            : `w-[5vw] ${setPageWidth("95vw")}`
+            ? `w-[20vw] md:max-mlg:w-[25vw] lg:w-[20vw]`
+            : `w-[5vw] md:max-mlg:w-[10vw] xl:w-[5vw] lg:w-[5vw]`
         } duration-300 `}
       >
         <ul className="pt-2">
           {Menus.map((menu, index) => (
             <>
               <li
-                key={index}
+                key={menu.id}
                 className={`group/item text-gray-300 text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-lightGreen hover:text-white active:bg-lightGreen active:text-white rounded-md ${
                   menu.spacing ? "mt-9" : "mt-2"
                 }`}
               >
                 <span
-                  className={`text-2xl block float-left ${
+                  className={`text-2xl md:max-mlg:text-lg block float-left ${
                     !open &&
                     "pr-2 py-1 hover:bg-lightGreen hover:text-white rounded-md"
                   }`}
@@ -62,7 +68,7 @@ const SideNav = (props) => {
                 </span>
 
                 <span
-                  className={`text-base font-medium flex-1 duration-200 ${
+                  className={`text-base md:max-mlg:text-sm font-medium flex-1 duration-200 ${
                     !open && "hidden"
                   }`}
                 >
@@ -73,7 +79,7 @@ const SideNav = (props) => {
                   className={`group/edit invisible group-hover/item:${
                     open ? "invisible" : "visible"
                   }
-                  }  items-center`}
+                  } items-center`}
                 >
                   <span
                     className={`group-hover/edit:text-white inline-block text-center text-xs rounded-lg m4-10 fixed bg-darkGreen px-2 py-1 z-15`}
@@ -88,7 +94,7 @@ const SideNav = (props) => {
 
         {/* Second Menu Box */}
         <div
-          className={`bg-darkIndigo rounded-xl px-6 py-4 mt-5 ${
+          className={`bg-darkIndigo rounded-xl px-6 py-4 mt-5 w-full ${
             !open && "hidden"
           }`}
         >
@@ -96,11 +102,11 @@ const SideNav = (props) => {
             {InfoMenus.map((menu, index) => (
               <>
                 <li
-                  key={index}
-                  className={`text-gray-300 text-sm flex items-center gap-x-1 cursor-pointer p-2 hover:bg-lightGreen hover:text-white active:bg-lightGreen active:text-white rounded-md`}
+                  key={menu.id}
+                  className={`text-gray-300 text-sm md:max-mlg:text-xs flex items-center gap-x-1 cursor-pointer p-2 hover:bg-lightGreen hover:text-white active:bg-lightGreen active:text-white rounded-md`}
                 >
                   <span
-                    className={`text-sm font-small flex-1 duration-200 ${
+                    className={`text-sm md:max-mlg:text-xs font-small flex-1 duration-200 ${
                       !open && "hidden"
                     }`}
                   >
@@ -129,8 +135,8 @@ const SideNav = (props) => {
                   <ul>
                     {menu.submenuItems.map((submenuItem, index) => (
                       <li
-                        key={index}
-                        className="text-gray-300 text-sm flex items-center cursor-pointer p-1 pl-2 hover:bg-lightGreen hover:text-white active:bg-lightGreen active:text-white rounded-md"
+                        key={submenuItem.id}
+                        className="text-gray-300 text-sm md:max-mlg:text-xs flex items-center cursor-pointer p-1 pl-2 hover:bg-lightGreen hover:text-white active:bg-lightGreen active:text-white rounded-md"
                       >
                         {submenuItem.title}
                       </li>
@@ -142,8 +148,8 @@ const SideNav = (props) => {
                   <ul>
                     {menu.submenuItems.map((submenuItem, index) => (
                       <li
-                        key={index}
-                        className="text-gray-300 text-sm flex items-center cursor-pointer p-1 pl-2 hover:bg-lightGreen hover:text-white active:bg-lightGreen active:text-white rounded-md"
+                        key={submenuItem.id}
+                        className="text-gray-300 text-sm md:max-mlg:text-xs flex items-center cursor-pointer p-1 pl-2 hover:bg-lightGreen hover:text-white active:bg-lightGreen active:text-white rounded-md"
                       >
                         {submenuItem.title}
                       </li>
@@ -153,17 +159,17 @@ const SideNav = (props) => {
               </>
             ))}
           </ul>
-          <h3 className="text-sm text-darkWhite py-1">Contract Address:</h3>
+          <h3 className="text-sm md:max-mlg:text-xs text-darkWhite py-1">Contract Address:</h3>
           <div className="inline-flex gap-x-3 items-center">
             <p className="text-xs text-darkWhite py-2">
-              0x72920394...Bdfj34802
+              0x72920394...<span className="md:max-mlg:hidden">Bdfj34802</span>
             </p>
             <MdContentCopy className="text-base text-white hover:bg-lightWhite" />
           </div>
 
           <button className="text-sm bg-darkGreen hover:bg-lightGreen text-white py-1 px-4 mt-2 mb-4 rounded-full items-center">
-            <MdOutlineLightMode className="inline text-center mb-1" /> &nbsp;
-            Light Mode
+            <MdOutlineLightMode className="inline text-center text-sm md:max-mlg:text-xs mb-1" />&nbsp;
+            <span className="md:max-mlg:text-[10px]">Light Mode</span>
           </button>
           <div className="flex flex-row gap-3">
             <BsTwitter className="text-darkWhite" />
@@ -184,6 +190,12 @@ const SideNav = (props) => {
             } duration-300`}
             onClick={() => {
               setOpen(!open);
+              open && setPageWidth("95vw")
+
+              if(open && (window.innerWidth < 976) && (window.innerWidth > 769)){
+                setPageWidth("75vw")
+              }
+              
             }}
           />
         </div>
