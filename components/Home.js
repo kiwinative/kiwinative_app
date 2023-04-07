@@ -17,13 +17,13 @@ import { styles } from "@/styles";
 import Roadmap from "./Roadmap";
 import Footer from "./Footer";
 import Carousel from "./Carousel";
-// import Carousel2 from "./Carousel2";
+import MobileMenu from "./MobileMenu";
+import Blur from "./Blur";
 import { useGlobalContext } from "@/app/Context/store";
 import { DoughnutChart } from "./DoughnutChart";
-//removed basis-10/12 from third div
 
 const Home = () => {
-  const { pageWidth, open } = useGlobalContext();
+  const { pageWidth, open, blur } = useGlobalContext();
   return (
     <div
       className={`h-auto w-[${pageWidth}] mt-[50px] overflow-x-none ${
@@ -282,6 +282,8 @@ const Home = () => {
 
           <Roadmap />
           <Footer />
+          <Blur/>
+          <MobileMenu/>
         </div>
       </div>
     </div>

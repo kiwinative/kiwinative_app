@@ -34,12 +34,6 @@ const SideNav = (props) => {
     setMobileview,
   } = useGlobalContext();
 
-  // useEffect(() => {
-  //   if(open && (window.innerWidth < 976) && (window.innerWidth > 769)){
-  //     setPageWidth("75vw")
-  //   }
-  // }, [open])
-
   return (
     <div>
       <div

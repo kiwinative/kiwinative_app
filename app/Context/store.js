@@ -14,6 +14,9 @@ const GlobalContext = createContext({
 
 export const GlobalContextProvider = ({ children }) => {
   const [open, setOpen] = useState(true);
+  const [menuToggle, setMenuToggle] = useState(false);
+  const [active, setActive] = useState("");
+  const [blur, setBlur] = useState(false);
   const [submenuOpen, setSubmenuOpen] = useState(false);
   const [infosubmenuOpen, setInfosubmenuOpen] = useState(false);
   const [linksubmenuOpen, setLinksubmenuOpen] = useState(false);
@@ -52,6 +55,12 @@ export const GlobalContextProvider = ({ children }) => {
         setTooltip,
         mobileview,
         setMobileview,
+        menuToggle,
+        setMenuToggle,
+        active, 
+        setActive,
+        blur,
+        setBlur,
       }}
     >
       {children}
