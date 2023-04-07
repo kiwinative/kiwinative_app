@@ -5,13 +5,13 @@ import { GrReddit } from "react-icons/gr";
 import { useGlobalContext } from "@/app/Context/store";
 
 export default function Footer() {
-  const { open, pageWidth, setPageWidth } = useGlobalContext();
+  const { open, pageWidth} = useGlobalContext();
   return (
     <div className={`h-auto w-[${pageWidth}]`}>
       <div className="mx-[15px] md:mx-[60px] lg:mx-[15px] md:max-lg:mx-[15px] p-12 pb-3 bg-lightIndigo rounded-xl mb-5">
         <div>
           <h1 className="font-black text-darkWhite text-center lg:text-[35px] sm:text-[25px] xs:text-[15px] text-[25px] pb-10">
-            Don't miss out. Stay updated.
+            Stay updated. Don't miss out!
           </h1>
         </div>
         <div className="flex flex-row gap-x-7 sm:gap-x-10 items-center text-center mb-10 justify-center">

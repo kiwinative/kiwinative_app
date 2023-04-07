@@ -6,13 +6,12 @@ import Header from "@/components/Header";
 import { useGlobalContext } from "./Context/store";
 
 const HomePage = () => {
-  const { pageWidth, sidenavWidth } = useGlobalContext();
+  const { pageWidth } = useGlobalContext();
 
   return (
     <>
       <Header />
       <div className="flex flex-row bg-darkIndigo overflow-x-hidden">
-        {/* <div className={`w-0 md:w-[${sidenavWidth}]`}> */}
         <div className={`hidden md:block w-[20vw]`}>
           <SideNav />
         </div>
