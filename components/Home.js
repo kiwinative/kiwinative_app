@@ -20,14 +20,19 @@ import Carousel from "./Carousel";
 // import Carousel2 from "./Carousel2";
 import { useGlobalContext } from "@/app/Context/store";
 import { DoughnutChart } from "./DoughnutChart";
+//removed basis-10/12 from third div
 
 const Home = () => {
-  const { pageWidth } = useGlobalContext();
+  const { pageWidth, open } = useGlobalContext();
   return (
     <div
-      className={`h-auto w-[${pageWidth}] object-fill select-none relatives mt-[50px] overflow-x-none`}
+      className={`h-auto w-[${pageWidth}] mt-[50px] overflow-x-none ${
+        open
+            ? `md:max-mlg:w-[75vw] md:max-mlg:ml-[8vw] lg:w-[80vw] lg:ml-[10vw] `
+            : `md:max-mlg:w-[90vw] lg:w-[95vw]`
+      }`}
     >
-      <div className="basis-10/12 bg-darkIndigo box-content">
+      <div className=" bg-darkIndigo box-content">
         <div>
           <Carousel />
 
@@ -73,7 +78,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className={`h-auto md:h-screen w-[${pageWidth}]`}>
+          <div className={`h-auto md:h-screen md:max-mlg:h-auto w-[${pageWidth}]`}>
             <h1 className={`${styles.subHeaderText}`}>
               What to know about Kiwinative
             </h1>
@@ -108,7 +113,7 @@ const Home = () => {
           </div>
 
           <div
-            className={`h-auto md:h-screen w-[${pageWidth}] relative flex flex-col justify-center items-center place-content-centers p-10 sm:p-20`}
+            className={`h-auto md:h-screen md:max-mlg:h-auto w-[${pageWidth}] relative flex flex-col justify-center items-center place-content-centers p-10 sm:p-20 md:max-mlg:p-10`}
           >
             <h1 className={styles.subHeaderText}>Objectives of the Project</h1>
             <h1 className={styles.headerText}>Why Kiwinative?</h1>
@@ -152,14 +157,14 @@ const Home = () => {
           </div>
 
           <div
-            className={`h-auto w-[${pageWidth}] container-none flex flex-col justify-center items-center p-10 sm:p-20`}
+            className={`h-auto w-[${pageWidth}] container-none flex flex-col justify-center items-center p-10 sm:p-20 md:max-mlg:p-10 lg:p-20`}
           >
             <h1 className={styles.subHeaderText}>
               Real-world uses of Kiwinative
             </h1>
             <h1 className={styles.headerText}>Ecosytem</h1>
             <div className="container-none flex flex-row flex-wrap items-center">
-              <div className=" basis-full md:basis-2/5 p-4 m-10 bg-lightIndigo rounded-xl">
+              <div className=" basis-full md:basis-2/5 md:max-mlg:basis-full p-4 m-10 bg-lightIndigo rounded-xl">
                 <div className="container-none flex flex-row items-center">
                   <div className="basis-2/5">
                     <h1 className="text-2xl font-bold text-center text-darkWhite">
@@ -177,7 +182,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="basis-full md:basis-2/5 p-4 m-10 bg-lightIndigo rounded-xl">
+              <div className="basis-full md:basis-2/5 md:max-mlg:basis-full  p-4 m-10 bg-lightIndigo rounded-xl">
                 <div className="container-none flex flex-row items-center">
                   <div className="basis-2/5">
                     <h1 className="text-2xl font-bold text-center text-darkWhite">
@@ -195,7 +200,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="basis-full md:basis-2/5 p-4 m-10 bg-lightIndigo rounded-xl">
+              <div className="basis-full md:basis-2/5 md:max-mlg:basis-full  p-4 m-10 bg-lightIndigo rounded-xl">
                 <div className="container-none flex flex-row items-center">
                   <div className="basis-2/5">
                     <h1 className="text-2xl font-bold text-center text-darkWhite">
@@ -213,7 +218,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="basis-full md:basis-2/5 p-4 m-10 bg-lightIndigo rounded-xl">
+              <div className="basis-full md:basis-2/5 md:max-mlg:basis-full p-4 m-10 bg-lightIndigo rounded-xl">
                 <div className="container-none flex flex-row items-center">
                   <div className="basis-2/5">
                     <h1 className="text-2xl font-bold text-center text-darkWhite">

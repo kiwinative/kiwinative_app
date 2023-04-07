@@ -60,14 +60,14 @@ const Carousel = () => {
   return (
     <div ref={imageRef}>
       <div
-        className={`aspect-video bg-darkIndigo h-50vh md:h-auto ${
-          open ? "w-[80vw]" : "w-[100vw] md:w-[95vw]"
+        className={`aspect-video bg-darkIndigo h-50vh md:max-lg:h-[50vh] md:h-auto  ${
+          open ? "w-[80vw]" : "w-[100vw] md:w-[95vw] lg:w-[95vw]"
         } rounded-lg`}
       >
         <img
           src={sliderImages[index]}
-          className={`h-[50vh] md:h-[90vh] ${
-            open ? "w-[80vw]" : "w-[100vw] md:w-[93.5vw]"
+          className={`h-[50vh] md:max-lg:h-[50vh] md:h-[90vh] ${
+            open ? "w-[80vw]" : "w-[100vw] md:w-[93.5vw] lg:w-full"
           } ml-0 md:ml-2 rounded-lg`}
         ></img>
         {/* <Image src={sliderImages[index]} alt="" height="500" width="1200" /> */}
@@ -76,7 +76,7 @@ const Carousel = () => {
       <div
         className={`absolute ${
           open ? "w-[80vw]" : "w-[100vw] md:w-[95vw]"
-        } top-1/3 md:top-1/2 transform -translate-y-1/2  px-3 flex justify-between items-center`}
+        } top-1/3 md:top-1/2 md:max-lg:top-1/3 transform -translate-y-1/2  px-3 flex justify-between items-center`}
       >
         <button
           className="bg-black text-white p-1 rounded-full bg-opacity-50 cursor-pointer hover:bg-opacity-100 transition "

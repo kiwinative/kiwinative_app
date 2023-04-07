@@ -23,16 +23,16 @@ export const GlobalContextProvider = ({ children }) => {
   const [mobileview, setMobileview] = useState(true);
 
   useEffect(() => {
-    if (window.innerWidth < 769) {
+    if (window.innerWidth < 976) {
       setOpen(false);
       setPageWidth("95vw");
       setTooltip(false);
     } else {
       setOpen(true);
       setPageWidth("80vw");
-      
     }
   }, []);
+
   return (
     <GlobalContext.Provider
       value={{
