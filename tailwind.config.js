@@ -31,6 +31,9 @@ module.exports = {
         darkWhite: "#fffafa",
         veryDarkWhite: "f5f5f5",
       },
+      fontFamily: {
+        poppins: ["Poppins"]
+      }
     },
   },
   plugins: [

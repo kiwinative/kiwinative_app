@@ -33,7 +33,7 @@ const Carousel = () => {
   const startSlide = () => {
     slideInterval = setInterval(() => {
       handleOnNextClick();
-    }, 5000);
+    }, 8000);
   };
 
   const stopSlide = () => {

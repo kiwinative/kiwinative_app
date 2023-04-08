@@ -18,7 +18,7 @@ const MobileMenu = () => {
                   key={link.id}
                   className={`${
                     active === link.title ? "bg-lightGreen text-white" : "text-white"
-                  } active:bg-lightGreen font-poppins font-medium cursor-pointer text-[16px] py-2 pl-2 pr-12 rounded-lg`}
+                  } active:bg-lightGreen font-poppins font-medium cursor-pointer text-[16px] py-2 pl-2 pr-[40vw] rounded-lg`}
                   onClick={() => {
                     setMenuToggle(!menuToggle);
                     setBlur(!blur);
