@@ -164,7 +164,7 @@ const SideNav = (props) => {
             <MdOutlineLightMode className="inline text-center text-sm md:max-mlg:text-xs mb-1" />&nbsp;
             <span className="md:max-mlg:text-[10px]">Light Mode</span>
           </button>
-          <div className="flex flex-row gap-3">
+          <div className="flex flex-row gap-3 items-center">
             <a href="https://twitter.com/KIWINATIVEKWN?t=Viy21C9rs8BgUQVv8LKLQA&s=09" target="_blank"><BsTwitter className="text-darkWhite" /></a>
             <a href="https://t.me/+0g-hPTQ3OAZlMGI8" target="_blank"><TbBrandTelegram className="text-darkWhite" /></a>
             <a href="https://www.reddit.com/r/KIWINATIVE1?utm_medium=android_app&utm_source=share" target="_blank"><BsMedium className="text-darkWhite" /></a>

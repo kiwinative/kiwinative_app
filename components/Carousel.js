@@ -4,7 +4,7 @@ import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
 import { useGlobalContext } from "@/app/Context/store";
 
 const sliderImages = [
-  "/slider-img1.png",
+  "/slider-img1.jpg",
   "/slider-img2.png",
   "/slider-img3.png",
 ];

@@ -7,6 +7,7 @@ import {
   useState,
   useEffect,
 } from "react";
+import { ThirdwebProvider, ChainId } from "@thirdweb-dev/react";
 
 const GlobalContext = createContext({
   loading: false,
@@ -37,6 +38,12 @@ export const GlobalContextProvider = ({ children }) => {
   }, []);
 
   return (
+    <ThirdwebProvider activeChain={ChainId.BinanceSmartChainMainnet} dAppMeta={{
+      name: "KiwiNative",
+      description: "Kiwinative is a web3 based project that focuses on enhancing peer to peer transactions and improves usability and profitability.",
+      logoUrl: "https://kiwinative.pro/logo.png",
+      url: "https://kiwinative.pro",
+    }}>
     <GlobalContext.Provider
       value={{
         open,
@@ -65,6 +72,7 @@ export const GlobalContextProvider = ({ children }) => {
     >
       {children}
     </GlobalContext.Provider>
+    </ThirdwebProvider>
   );
 };
 
