@@ -35,10 +35,10 @@ export default function Footer() {
           </h1>
         </div>
         <div className="flex flex-row gap-x-7 items-center py-3 text-center justify-center">
-          <BsTwitter className="text-white text-[30px] bg-lightGreen p-2 rounded-full" />
-          <FaTelegramPlane className="text-white text-[30px] bg-lightGreen p-2 rounded-full" />
-          <GrReddit className="text-white text-[30px] bg-lightGreen p-2 rounded-full" />
-          <BsDiscord className="text-white text-[30px] bg-lightGreen p-2 rounded-full" />
+          <a href="https://twitter.com/KIWINATIVEKWN?t=Viy21C9rs8BgUQVv8LKLQA&s=09" target="_blank"><BsTwitter className="text-white text-[30px] bg-lightGreen p-2 rounded-full" /></a>
+          <a href="https://t.me/+0g-hPTQ3OAZlMGI8" target="_blank"><FaTelegramPlane className="text-white text-[30px] bg-lightGreen p-2 rounded-full" /></a>
+          <a href="https://www.reddit.com/r/KIWINATIVE1?utm_medium=android_app&utm_source=share" target="_blank"><GrReddit className="text-white text-[30px] bg-lightGreen p-2 rounded-full" /></a>
+          <a href="https://discord.gg/KhCa6tuJ" target="_blank"><BsDiscord className="text-white text-[30px] bg-lightGreen p-2 rounded-full" /></a>
         </div>
         <div>
           <p className="text-sm text-darkWhite text-center">

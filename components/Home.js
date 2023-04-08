@@ -176,7 +176,7 @@ const Home = () => {
                     </h1>
                   </div>
                   <div className="basis-3/5 border-l-2 border-lightGreen p-3">
-                    <p className="text-center text-darkWhite">
+                    <p className="text-center text-darkWhite text-[14px]">
                       Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
                       eiusmod tempor incidunt ut labore et dolore magna aliqua.
                     </p>
@@ -194,7 +194,7 @@ const Home = () => {
                     </h1>
                   </div>
                   <div className="basis-3/5 border-l-2 border-lightGreen p-3">
-                    <p className="text-center text-white">
+                    <p className="text-center text-white text-[14px]">
                       Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
                       eiusmod tempor incidunt ut labore et dolore magna aliqua.
                     </p>
@@ -212,7 +212,7 @@ const Home = () => {
                     </h1>
                   </div>
                   <div className="basis-3/5 border-l-2 border-lightGreen p-3">
-                    <p className="text-center text-darkWhite">
+                    <p className="text-center text-darkWhite text-[14px]">
                       Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
                       eiusmod tempor incidunt ut labore et dolore magna aliqua.
                     </p>
@@ -230,7 +230,7 @@ const Home = () => {
                     </h1>
                   </div>
                   <div className="basis-3/5 border-l-2 border-lightGreen p-3">
-                    <p className="text-center text-darkWhite">
+                    <p className="text-center text-darkWhite text-[14px]">
                       Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
                       eiusmod tempor incidunt ut labore et dolore magna aliqua.
                     </p>
