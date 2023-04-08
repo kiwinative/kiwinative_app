@@ -13,6 +13,7 @@ import {
 import { SiStackbit } from "react-icons/si";
 import Image from "next/image";
 import logo from "../public/logo.svg";
+import yellowLogo from "../public/yellow-logo-icon.svg";
 import { styles } from "@/styles";
 import Roadmap from "./Roadmap";
 import Footer from "./Footer";
@@ -23,14 +24,14 @@ import { useGlobalContext } from "@/app/Context/store";
 import { DoughnutChart } from "./DoughnutChart";
 
 const Home = () => {
-  const { pageWidth, open, blur } = useGlobalContext();
+  const { pageWidth, open, menuToggle, setMenuToggle, } = useGlobalContext();
   return (
     <div
       className={`h-auto w-[${pageWidth}] mt-[50px] overflow-x-none ${
         open
             ? `md:max-mlg:w-[75vw] md:max-mlg:ml-[8vw] lg:w-[80vw] lg:ml-[10vw] `
             : `md:max-mlg:w-[90vw] lg:w-[95vw]`
-      }`}
+      } ${menuToggle && "fixed"}`}
     >
       <div className=" bg-darkIndigo box-content">
         <div>
@@ -175,7 +176,7 @@ const Home = () => {
                     </h1>
                   </div>
                   <div className="basis-3/5 border-l-2 border-lightGreen p-3">
-                    <p className="text-center text-darkWhite">
+                    <p className="text-center text-darkWhite text-[14px]">
                       Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
                       eiusmod tempor incidunt ut labore et dolore magna aliqua.
                     </p>
@@ -193,7 +194,7 @@ const Home = () => {
                     </h1>
                   </div>
                   <div className="basis-3/5 border-l-2 border-lightGreen p-3">
-                    <p className="text-center text-white">
+                    <p className="text-center text-white text-[14px]">
                       Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
                       eiusmod tempor incidunt ut labore et dolore magna aliqua.
                     </p>
@@ -211,7 +212,7 @@ const Home = () => {
                     </h1>
                   </div>
                   <div className="basis-3/5 border-l-2 border-lightGreen p-3">
-                    <p className="text-center text-darkWhite">
+                    <p className="text-center text-darkWhite text-[14px]">
                       Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
                       eiusmod tempor incidunt ut labore et dolore magna aliqua.
                     </p>
@@ -229,7 +230,7 @@ const Home = () => {
                     </h1>
                   </div>
                   <div className="basis-3/5 border-l-2 border-lightGreen p-3">
-                    <p className="text-center text-darkWhite">
+                    <p className="text-center text-darkWhite text-[14px]">
                       Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
                       eiusmod tempor incidunt ut labore et dolore magna aliqua.
                     </p>
@@ -247,7 +248,7 @@ const Home = () => {
             <div className="container-none flex flex-row items-center justify-evenly mt-8">
               <div className="flex flex-col items-center">
                 <BsStack className="text-[#ffd700] text-[45px] sm:text-[65px]" />
-                <h1 className="text-lg sm:text-2xl pt-2 font-bold text-center text-darkWhite">
+                <h1 className="text-sm sm:text-2xl pt-2 font-bold text-center text-darkWhite">
                   BEP-20
                 </h1>
                 <h1 className="text-sm sm:text-xl text-center text-darkWhite">
@@ -255,8 +256,9 @@ const Home = () => {
                 </h1>
               </div>
               <div className="flex flex-col items-center">
-                <BsCoin className="text-[#ffd700] text-[45px] sm:text-[65px]" />
-                <h1 className="text-lg sm:text-2xl pt-2 font-bold text-center text-darkWhite">
+              <Image src={yellowLogo} alt="" className="text-[#ffd700] h-[45px] w-[55px] sm:h-[75px] sm:w-[75px] sm:text-[65px]" />
+                {/* <BsCoin className="text-[#ffd700] text-[45px] sm:text-[65px]" /> */}
+                <h1 className="text-sm sm:text-2xl pt-2 font-bold text-center text-darkWhite">
                   $KIWINATIVE
                 </h1>
                 <h1 className="text-sm sm:text-xl text-center text-darkWhite">
@@ -264,10 +266,10 @@ const Home = () => {
                 </h1>
               </div>
               <div className="flex flex-col items-center">
-                <h1 className=" text-4xl sm:text-7xl font-bold text-center text-green-500">
+                <h1 className=" text-[40px] sm:text-7xl font-bold text-center text-green-500">
                   20B
                 </h1>
-                <h1 className=" text-lg sm:text-2xl pt-2 font-bold text-center text-darkWhite">
+                <h1 className=" text-sm sm:text-2xl pt-2 font-bold text-center text-darkWhite">
                   20 BILLION
                 </h1>
                 <h1 className=" text-sm sm:text-xl text-center text-darkWhite">

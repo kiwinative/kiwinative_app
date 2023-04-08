@@ -3,15 +3,14 @@ import {
   BsChevronDown,
   BsChevronDoubleLeft,
   BsTwitter,
-  BsInstagram,
   BsReddit,
+  BsMedium,
 } from "react-icons/bs";
 import { AiOutlineHome } from "react-icons/ai";
 import { TbBrandTelegram } from "react-icons/tb";
 import { FaDiscord } from "react-icons/fa";
 import { MdContentCopy, MdOutlineLightMode } from "react-icons/md";
 import { Menus, InfoMenus } from "@/constants";
-import Link from "next/link";
 import { useGlobalContext } from "@/app/Context/store";
 
 const SideNav = (props) => {
@@ -165,12 +164,12 @@ const SideNav = (props) => {
             <MdOutlineLightMode className="inline text-center text-sm md:max-mlg:text-xs mb-1" />&nbsp;
             <span className="md:max-mlg:text-[10px]">Light Mode</span>
           </button>
-          <div className="flex flex-row gap-3">
-            <BsTwitter className="text-darkWhite" />
-            <TbBrandTelegram className="text-darkWhite" />
-            <BsInstagram className="text-darkWhite" />
-            <BsReddit className="text-darkWhite" />
-            <FaDiscord className="text-darkWhite" />
+          <div className="flex flex-row gap-3 items-center">
+            <a href="https://twitter.com/KIWINATIVEKWN?t=Viy21C9rs8BgUQVv8LKLQA&s=09" target="_blank"><BsTwitter className="text-darkWhite" /></a>
+            <a href="https://t.me/+0g-hPTQ3OAZlMGI8" target="_blank"><TbBrandTelegram className="text-darkWhite" /></a>
+            <a href="https://www.reddit.com/r/KIWINATIVE1?utm_medium=android_app&utm_source=share" target="_blank"><BsMedium className="text-darkWhite" /></a>
+            <a href="https://www.reddit.com/r/KIWINATIVE1?utm_medium=android_app&utm_source=share" target="_blank"><BsReddit className="text-darkWhite" /></a>
+            <a href="https://discord.gg/KhCa6tuJ" target="_blank"><FaDiscord className="text-darkWhite" /></a>
           </div>
           <p className="text-xs  text-darkWhite pt-2 mt-2 border-t-2 border-darkWhite">
             &#169; Kiwinative.pro ver 1.0.0
