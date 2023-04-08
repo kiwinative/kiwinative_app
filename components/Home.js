@@ -23,14 +23,14 @@ import { useGlobalContext } from "@/app/Context/store";
 import { DoughnutChart } from "./DoughnutChart";
 
 const Home = () => {
-  const { pageWidth, open, blur } = useGlobalContext();
+  const { pageWidth, open, menuToggle, setMenuToggle, } = useGlobalContext();
   return (
     <div
       className={`h-auto w-[${pageWidth}] mt-[50px] overflow-x-none ${
         open
             ? `md:max-mlg:w-[75vw] md:max-mlg:ml-[8vw] lg:w-[80vw] lg:ml-[10vw] `
             : `md:max-mlg:w-[90vw] lg:w-[95vw]`
-      }`}
+      } ${menuToggle && "fixed"}`}
     >
       <div className=" bg-darkIndigo box-content">
         <div>
