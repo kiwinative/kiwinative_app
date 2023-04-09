@@ -1,8 +1,9 @@
 import React from "react";
-import { BsCashCoin, BsCheckCircle, BsBank2, BsStack, BsLightningFill, BsFillPeopleFill, BsFillShieldSlashFill, BsCurrencyExchange, BsPeopleFill, } from "react-icons/bs";
+import { BsCashCoin, BsCheckCircle, BsLightningFill, BsFillShieldSlashFill, BsCurrencyExchange, BsPeopleFill, } from "react-icons/bs";
 import { AiOutlineHome } from "react-icons/ai";
 import { TbAirBalloon } from "react-icons/tb";
-import { FaCoins, FaToriiGate, FaRandom, } from "react-icons/fa";
+import { FaCoins } from "react-icons/fa";
+import pancakeswap from "../public/pancakeswap.svg";
 
 import {
   MdSportsVolleyball,
@@ -11,30 +12,31 @@ import {
   MdPendingActions,
 } from "react-icons/md";
 import { SiStackbit } from "react-icons/si";
+import Image from "next/image";
 
 //Main Menu anchor tags
 export const Menus = [
   { title: "Home",id: 1, icon: <AiOutlineHome />, tooltip: "Home", active: true },
   { title: "Airdrop",id: 2, tooltip: "Airdrop", icon: <TbAirBalloon /> },
   {
-    title: "Sports",
+    title: "KSports",
     id: 3,
     icon: <MdSportsVolleyball />,
-    tooltip: "Sports",
+    tooltip: "KSports",
     submenu: false,
   },
   {
-    title: "Casino",
+    title: "KCasino",
     id: 4,
     icon: <MdOutlineCasino />,
-    tooltip: "Casino",
+    tooltip: "KCasino",
     submenu: false,
   },
   {
-    title: "Marketplace",
+    title: "PeerMarket",
     id: 5,
     icon: <BsCashCoin />,
-    tooltip: "MarketPlace",
+    tooltip: "PeerMarket",
     submenu: false,
   },
   { title: "Token",id: 6, icon: <MdToken />, tooltip: "Token" },
@@ -47,9 +49,8 @@ export const InfoMenus = [
     id: 1,
     submenu: true,
     submenuItems: [
-      { title: "submenu 1", id: 1, },
-      { title: "submenu 2", id: 2, },
-      { title: "submenu 3", id: 3, },
+      { title: "White paper", id: 1, },
+      { title: "Medium", id: 2, },
     ],
   },
 
@@ -58,9 +59,7 @@ export const InfoMenus = [
     id: 2,
     submenu: true,
     submenuItems: [
-      { title: "submenu 1", id: 1, },
-      { title: "submenu 2", id: 2, },
-      { title: "submenu 3", id: 3, },
+      { title: "Binance explorer", id: 1, },
     ],
   },
 ];
@@ -69,24 +68,25 @@ export const InfoMenus = [
 export const Exchanges = [
   {
     id: 0,
-    icon: <FaToriiGate className="text-red-500 text-[25px] sm:text-[40px]"/>,
-    company: "GATE.IO"
+    icon: <Image src={pancakeswap} height={100} width={100} className="text-red-500 text-[25px] sm:text-[40px]"/>,
+    company: "PANCAKESWAP",
+    isTrue: "soon"
   },
-  {
-    id: 1,
-    icon: <BsBank2 className="text-[#ffd700] text-[25px] sm:text-[40px]"/>,
-    company: "LBANK"
-  },
-  {
-    id: 2,
-    icon: <SiStackbit className="text-orange-400 text-[25px] sm:text-[40px]"/>,
-    company: "HOTBIT"
-  },
-  {
-    id: 3,
-    icon: <FaRandom className="text-red-400 text-[25px] sm:text-[40px]"/>,
-    company: "WXYZ"
-  },
+  // {
+  //   id: 1,
+  //   icon: <BsBank2 className="text-[#ffd700] text-[25px] sm:text-[40px]"/>,
+  //   company: "LBANK"
+  // },
+  // {
+  //   id: 2,
+  //   icon: <SiStackbit className="text-orange-400 text-[25px] sm:text-[40px]"/>,
+  //   company: "HOTBIT"
+  // },
+  // {
+  //   id: 3,
+  //   icon: <FaRandom className="text-red-400 text-[25px] sm:text-[40px]"/>,
+  //   company: "WXYZ"
+  // },
 ]
 
 

@@ -1,8 +1,8 @@
 import React from "react";
 import "../dist/main.css";
 import {
-  BsStack,
-} from "react-icons/bs";
+  SiBinance,
+} from "react-icons/si";
 import Image from "next/image";
 import logo from "../public/logo.svg";
 import yellowLogo from "../public/yellow-logo-icon.svg";
@@ -45,6 +45,7 @@ const Home = () => {
                     <div key={market.id} className="flex flex-row items-center">
                       <span>{market.icon}</span>
                       <p className="text-center pl-2 sm:pl-5 text-base sm:text-lg font-bold align-middle text-darkWhite">{market.company}</p>
+                      <p className="bg-orange-300 text-white font-normal ml-3 p-1 rounded-lg">{market.isTrue}</p>
                     </div>
                   ))
                 }
@@ -127,7 +128,7 @@ const Home = () => {
             <h1 className={styles.headerText}>TOKENOMICS</h1>
             <div className="container-none flex flex-row items-center justify-evenly mt-8">
               <div className="flex flex-col items-center">
-                <BsStack className="text-[#ffd700] text-[45px] sm:text-[65px]" />
+                <SiBinance className="text-[#ffd700] text-[45px] sm:text-[65px]" />
                 <h1 className="text-sm sm:text-2xl pt-2 font-bold text-center text-darkWhite">
                   BEP-20
                 </h1>
