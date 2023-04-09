@@ -16,14 +16,16 @@ import Image from "next/image";
 
 //Main Menu anchor tags
 export const Menus = [
-  { title: "Home",id: 1, icon: <AiOutlineHome />, tooltip: "Home", active: true },
-  { title: "Airdrop",id: 2, tooltip: "Airdrop", icon: <TbAirBalloon /> },
+  { title: "Home",id: 1, icon: <AiOutlineHome />, tooltip: "Home", active: true, },
+  { title: "Airdrop",id: 2, tooltip: "Airdrop", icon: <TbAirBalloon />, active: true },
   {
     title: "KSports",
     id: 3,
     icon: <MdSportsVolleyball />,
     tooltip: "KSports",
     submenu: false,
+    status: "Soon",
+    active: false,
   },
   {
     title: "KCasino",
@@ -31,6 +33,8 @@ export const Menus = [
     icon: <MdOutlineCasino />,
     tooltip: "KCasino",
     submenu: false,
+    status: "Soon",
+    active: false,
   },
   {
     title: "PeerMarket",
@@ -38,8 +42,10 @@ export const Menus = [
     icon: <BsCashCoin />,
     tooltip: "PeerMarket",
     submenu: false,
+    status: "Soon",
+    active: false,
   },
-  { title: "Token",id: 6, icon: <MdToken />, tooltip: "Token" },
+  { title: "Token",id: 6, icon: <MdToken />, tooltip: "Token", active: true},
 ];
 
 //Smaller menu visible on large screens

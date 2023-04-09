@@ -47,9 +47,9 @@ const SideNav = (props) => {
             <>
               <li
                 key={menu.id}
-                className={`group/item text-gray-300 text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-lightGreen hover:text-white active:bg-lightGreen active:text-white rounded-md ${
+                className={`group/item text-gray-300 disabled text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-lightGreen hover:text-white active:bg-lightGreen active:text-white rounded-md ${
                   menu.spacing ? "mt-9" : "mt-2"
-                }`}
+                } ${!menu.active && "cursor-not-allowed hover:bg-lightIndigo"}`}
               >
                 <span
                   className={`text-2xl md:max-mlg:text-lg block float-left ${
@@ -66,6 +66,10 @@ const SideNav = (props) => {
                   }`}
                 >
                   {menu.title}
+                </span>
+
+                <span className={`text-xs text-center items-center w-[3vw] rounded-3xl bg-darkGreen duration-300 ${!open && "hidden"}`}>
+                  {menu.status}
                 </span>
 
                 <span
