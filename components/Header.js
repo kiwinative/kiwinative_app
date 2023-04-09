@@ -34,7 +34,7 @@ export default function Header() {
         <ConnectWallet
           accentColor='#90a55c'
           colorMode='dark'
-          className="text-[11px] md:text-[15px] gap-x-2 md:gap-x-4 items-center text-white font-bold sm:py-2 py-2 md:py-3  pr-3 md:px-4 rounded-full bg-lightGreen hover:bg-darkGreen"
+          className="text-[11px] md:text-[15px] md:gap-x-4 items-center text-white font-bold sm:py-2 py-2 md:py-3 rounded-full bg-lightGreen hover:bg-darkGreen"
           />
           {/* <button className="inline-flex text-[11px] md:text-[15px] gap-x-2 md:gap-x-4 items-center text-white font-bold sm:py-2 py-2  pr-3 md:px-4 rounded-full bg-lightGreen hover:bg-darkGreen">
             <BsWallet2 className="invisible md:visible" />
