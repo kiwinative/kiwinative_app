@@ -177,7 +177,7 @@ export const roadmaps = [
     date: "Dec 2022 - Jan 2022",
     points: [
       "Understand Web3 technology; research, protocols, advantages, and tools.",
-      "Brainstorm and Conceptualize; ideas, leverage, unique features, potential use cases.",
+      "Brainstorm and Conceptualize; ideas, leverage, unique features, and potential use cases.",
       "Market Research and Analysis; feasibility, the potential for success, competitors, user behaviour, trends, refine.",
     ],
   },
@@ -202,7 +202,7 @@ export const roadmaps = [
     points: [
       "Kiwinative Website Lauch",
       "Deploy the Kiwinative smart contract on the Mainnet and conduct an audit.",
-      "Raise funds through private sale, presale, battle stake, and airdrop",
+      "Raise funds through Private sale and Presale; Airdrops.",
       "Pancakeswap, Coingecko, and Coinmarketcap Listing; community events and press releases.",
     ],
   },
