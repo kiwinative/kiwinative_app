@@ -3,6 +3,7 @@ import { BsStack, BsTwitter, BsDiscord } from "react-icons/bs";
 import { FaTelegramPlane } from "react-icons/fa";
 import { GrReddit } from "react-icons/gr";
 import { useGlobalContext } from "@/app/Context/store";
+import { Disclaimer } from "@/constants";
 
 export default function Footer() {
   const { open, pageWidth} = useGlobalContext();
@@ -14,7 +15,7 @@ export default function Footer() {
             Stay updated. Don't miss out!
           </h1>
         </div>
-        <div className="flex flex-col sm:flex-row gap-x-7 gap-y-2 sm:gap-y-0 sm:gap-x-10 items-center justify-between text-center mb-10">
+        <div className="flex flex-col sm:flex-row gap-x-7 gap-y-2 sm:gap-y-0 sm:gap-x-10 items-center justify-between md:justify-evenly text-center mb-10">
           <form>
             <input
               type="text"
@@ -28,10 +29,7 @@ export default function Footer() {
         </div>
         <div>
           <h1 className=" text-sm text-darkWhite text-center font-poppins">
-            Disclaimer: Lorem ipsum dolor sit amet, consectetur adipisci elit,
-            sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrum exercitationem ullam corporis
-            suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+            {Disclaimer}
           </h1>
         </div>
         <div className="flex flex-row gap-x-7 items-center py-3 text-center justify-center">
