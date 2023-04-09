@@ -92,45 +92,44 @@ export const Exchanges = [
 
 
 //About Kiwinative
-export const AboutKiwinative = <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
-eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut
-enim ad minim veniam, quis nostrum exercitationem ullam
-corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
-consequatur.<br/>
-Quis aute iure reprehenderit in voluptate velit esse cillum
-dolore eu fugiat nulla pariatur. Excepteur sint obcaecat
-cupiditat non proident, sunt in culpa qui officia deserunt
-mollit anim id est laborum. <br/> Quis aute iure reprehenderit in voluptate velit esse cillum
-dolore eu fugiat nulla pariatur. Excepteur sint obcaecat
-cupiditat non proident, sunt in culpa qui officia deserunt
-mollit anim id est laborum.</p>
+export const AboutKiwinative = <p>The Kiwinative token is a utility token based on BEP20 standards. 
+  This web3 project, based on BSC is focused on usability and profitability. 
+  It aims to build a decentralized community that is 
+  focused on benefiting one from one another<br/>
+  The primary goal will be to make it easier for millions of consumers all over
+   the world to accept cryptocurrencies by developing solutions 
+   that live up to their high standards. <br/>
+   Kiwinative seeks to strike a balance between creating a sense of 
+   scarcity for Kiwinative while ensuring that a large amount does not 
+   accumulate into a very small number of hands. 
+  </p>
 
 //Objectives
 export const Objectives = [
   {
     id: 0,
-    icon: <BsLightningFill className="text-orange-400"/>,
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisci elit, sedeiusmod tempor incidunt ut labore et dolore magna aliqua"
+    icon: <BsFillShieldSlashFill className="text-green-500"/>,
+    desc: "Kiwinative is a utility token based on BEP20 standards, which means it has a solid technical foundation that ensures its reliability, security, and interoperability with other blockchain-based systems"
   },
   {
     id: 1,
     icon: <BsPeopleFill className="text-green-500"/>,
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisci elit, sedeiusmod tempor incidunt ut labore et dolore magna aliqua"
+    desc: " Kiwinative is user-friendly and profitable with gaming platforms, peer markets, and other features providing various ways to earn and use tokens."
   },
   {
     id: 2,
-    icon: <BsFillShieldSlashFill className="text-green-500"/>,
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisci elit, sedeiusmod tempor incidunt ut labore et dolore magna aliqua"
+    icon: <BsLightningFill className="text-orange-400"/>,
+    desc: "Kiwinative maintains a fair distribution of tokens by balancing scarcity and preventing accumulation in a few hands, increasing their value over time."
   },
   {
     id: 3,
     icon: <FaCoins className="text-[#ffd700]"/>,
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisci elit, sedeiusmod tempor incidunt ut labore et dolore magna aliqua"
+    desc: "Kiwinative has a strategic allocation of tokens for development, research, and exploring business opportunities in the fast-moving crypto asset space."
   },
   {
     id: 4,
     icon: <BsCurrencyExchange className="text-[#ffd700]"/>,
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisci elit, sedeiusmod tempor incidunt ut labore et dolore magna aliqua"
+    desc: "Kiwinative's auto tax feature ensures sustainable growth by incurring a small tax on every transaction and using the revenue for marketing and ecosystem development."
   },
 ]
 
@@ -140,25 +139,25 @@ export const Ecosystem = [
     id: 0,
     number: "01.",
     title: "AIRDROP",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisci elit, sedeiusmod tempor incidunt ut labore et dolore magna aliqua"
+    desc: "Upon successfully completing the bounty task, holders are rewarded with free tokens as a token of appreciation."
   },
   {
     id: 1,
     number: "02.",
-    title: "SPORTS",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisci elit, sedeiusmod tempor incidunt ut labore et dolore magna aliqua"
+    title: "KSPORTS",
+    desc: "Web3 peer sports betting platform for football, basketball, ice hockey, snooker, tennis. Bet and win on sports predictions."
   },
   {
     id: 2,
     number: "03.",
-    title: "CASINO",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisci elit, sedeiusmod tempor incidunt ut labore et dolore magna aliqua"
+    title: "KCASINO",
+    desc: "Web3 casino platform with games like poker, jackpot, dice, etc. Earn Kiwinative by winning bets on any game."
   },
   {
     id: 3,
     number: "04.",
-    title: "MARKETPLACE",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisci elit, sedeiusmod tempor incidunt ut labore et dolore magna aliqua"
+    title: "PEERMARKET",
+    desc: "Web3 platform for buying and selling any item with Kiwinative as a transaction medium."
   },
 ];
 

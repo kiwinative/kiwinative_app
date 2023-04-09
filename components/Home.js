@@ -104,7 +104,7 @@ const Home = () => {
               {
                 Ecosystem.map((use, index) => (
                   <div key={use.id} className=" basis-full md:basis-2/5 md:max-mlg:basis-full p-4 m-10 bg-lightIndigo rounded-xl">
-                    <div className="container-none flex flex-row items-center">
+                    <div className="container-none flex flex-row items-center h-[160px]">
                       <div className="basis-2/5">
                         <h1 className="text-2xl font-bold text-center text-darkWhite">{use.number}</h1>
                         <h1 className="text-2xl font-bold text-center text-darkWhite">{use.title}</h1>
