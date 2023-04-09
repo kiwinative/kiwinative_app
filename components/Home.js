@@ -147,10 +147,10 @@ const Home = () => {
               </div>
               <div className="flex flex-col items-center">
                 <h1 className=" text-[40px] sm:text-7xl font-bold text-center text-green-500">
-                  20B
+                  10T
                 </h1>
                 <h1 className=" text-sm sm:text-2xl pt-2 font-bold text-center text-darkWhite">
-                  20 BILLION
+                  10 TRILLION
                 </h1>
                 <h1 className=" text-sm sm:text-xl text-center text-darkWhite">
                   Total Supply

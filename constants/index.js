@@ -171,26 +171,26 @@ export const Ecosystem = [
 export const roadmaps = [
   {
     title: "Phase 1.",
-    objective: "Research, Ideation & Design ",
+    objective: "Research on Web3 and idea conceptualization",
     icon: <BsCheckCircle color="#39ff14" />,
     iconBg: "#383E56",
-    date: "Sept 2022 - Dec 2022",
+    date: "Dec 2022 - Jan 2022",
     points: [
-      "Lorem ipsum dolor sit amet consectetur adipisci elit..",
-      "Lorem ipsum dolor sit amet consectetur adipisci elit.",
-      "Lorem ipsum dolor sit amet consectetur adipisci elit.",
+      "Understand Web3 technology; research, protocols, advantages, and tools.",
+      "Brainstorm and Conceptualize; ideas, leverage, unique features, potential use cases.",
+      "Market Research and Analysis; feasibility, the potential for success, competitors, user behaviour, trends, refine.",
     ],
   },
   {
     title: "Phase 2.",
-    objective: "Prototyping",
+    objective: "Design And Prototyping",
     icon: <BsCheckCircle color="#39ff14" className="text-bold" />,
     iconBg: "#E6DEDD",
     date: "Jan 2023 - March 2023",
     points: [
-      "Lorem ipsum dolor sit amet consectetur adipisci elit..",
-      "Lorem ipsum dolor sit amet consectetur adipisci elit.",
-      "Lorem ipsum dolor sit amet consectetur adipisci elit.",
+      "Website Design, Social Media Creation.",
+      "Smart-Contract creation & Testnet Testing.",
+      "developing working sales and marketing Strategy",
     ],
   },
   {
@@ -198,36 +198,64 @@ export const roadmaps = [
     objective: "Website & MVP Launch",
     icon: <MdPendingActions color="orange" />,
     iconBg: "#383E56",
-    date: "April 2023",
+    date: "April 2023 - Present",
     points: [
-      "Lorem ipsum dolor sit amet consectetur adipisci elit..",
-      "Lorem ipsum dolor sit amet consectetur adipisci elit.",
+      "Kiwinative Website Lauch",
+      "Deploy the Kiwinative smart contract on the Mainnet and conduct an audit.",
+      "Raise funds through private sale, presale, battle stake, and airdrop",
+      "Pancakeswap, Coingecko, and Coinmarketcap Listing; community events and press releases.",
     ],
   },
   {
     title: "Phase 4.",
-    objective: "Ecosystem Pilot Tests",
+    objective: "KSports test and Lauch",
     icon: <MdPendingActions color="orange" />,
     iconBg: "#E6DEDD",
-    date: "May 2023 - August 2023",
+    // date: "May 2023 - August 2023",
     points: [
-      "Lorem ipsum dolor sit amet consectetur adipisci elit..",
-      "Lorem ipsum dolor sit amet consectetur adipisci elit.",
-      "Lorem ipsum dolor sit amet consectetur adipisci elit.",
+      "Develop and deploy Kiwinative sports on Testnet",
+      "Launch Kiwinative sports on the Mainnet.",
+      "Release Kiwinative sports dapp on the web.",
+      "Publish Kiwinative sports on the Google Play Store.",
     ],
   },
   {
     title: "Phase 5.",
-    objective: "Final Release",
+    objective: "KRaffle test and Lauch",
     icon: <MdPendingActions color="orange" />,
     iconBg: "#383E56",
-    date: "September 2023",
+    // date: "September 2023",
     points: [
-      "Lorem ipsum dolor sit amet consectetur adipisci elit..",
-      "Lorem ipsum dolor sit amet consectetur adipisci elit.",
+      "Develop and deploy the Kiwinative Raffle on Testnet",
+      "Launch the Kiwinative Raffle on the Mainnet.",
+      "Integrate the Kiwinative Raffle into the Kiwinative sports dapp.",
+    ],
+  },
+  {
+    title: "Phase 6.",
+    objective: "KCasino test and Lauch",
+    icon: <MdPendingActions color="orange" />,
+    iconBg: "#E6DEDD",
+    // date: "May 2023 - August 2023",
+    points: [
+      "Develop and deploy Kiwinative casino on Testnet",
+      "Launch Kiwinative casino on the Mainnet.",
+      "Integrate the Kiwinative Raffle into the Kiwinative sports dapp.",
+    ],
+  },
+  {
+    title: "Phase 7.",
+    objective: "PeerMarket test and Lauch",
+    icon: <MdPendingActions color="orange" />,
+    iconBg: "#383E56",
+    // date: "September 2023",
+    points: [
+      "Develop and deploy Kiwinative PeerMarket on Testnet",
+      "Launch Kiwinative PeerMarket on the Mainnet.",
+      "Integrate the Kiwinative Raffle into the Kiwinative sports dapp.",
     ],
   },
 ];
 
 //Footer Disclaimer
-export const Disclaimer = "Disclaimer: Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrum exercitationem ullam corporissuscipit laboriosam, nisi ut aliquid ex ea commodi consequatur."
+export const Disclaimer = "Don’t hesitate to subscribe to the latest news on KWN Token social media as well as updated cryptocurrency blogs to get updated on KIWINATIVE"

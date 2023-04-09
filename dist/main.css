@@ -779,14 +779,6 @@ video {
   width: 100%;
 }
 
-.w-\[2vw\]{
-  width: 2vw;
-}
-
-.w-\[4vw\]{
-  width: 4vw;
-}
-
 .w-\[3vw\]{
   width: 3vw;
 }
@@ -1537,10 +1529,6 @@ video {
 
 .hover\:bg-opacity-100:hover{
   --tw-bg-opacity: 1;
-}
-
-.hover\:bg-none:hover{
-  background-image: none;
 }
 
 .hover\:text-white:hover{

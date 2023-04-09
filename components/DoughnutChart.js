@@ -6,17 +6,18 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 
 export const data = {
   labels: [
-    "Public Sale",
+    "Presale",
     "Private Sale",
-    "Staking Reward",
-    "Burned",
-    "Partnership Funds",
-    "Team Pool",
+    "Foundation & Development",
+    "Marketing",
+    "Founders & Partners",
+    "Airdrop",
+    "Liquidity",
   ],
   datasets: [
     {
       label: "Kiwinative held",
-      data: [10000000, 1000000, 3000000, 5000000, 2000000, 3000000],
+      data: [3000000000000, 300000000000, 500000000000, 300000000000, 700000000000, 500000000000, 4800000000000],
       backgroundColor: [
         "rgba(255, 99, 132, 0.6)",
         "rgba(54, 162, 235, 0.6)",
